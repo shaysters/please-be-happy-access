@@ -1,0 +1,64 @@
+{
+  "manifestVersion": 1,
+  "id": "please-be-happy-access",
+  "name": "Please Be Happy Access",
+  "description": "Screen reader and braille accessibility for Please Be Happy by Studio Élan. Reads dialogue, choices and every menu, makes the menus work from the keyboard, describes backgrounds and illustrations, and describes each character the first time you meet them. Works with the Windows version from Steam, itch.io or GOG.",
+  "authors": [
+    "Shaysters",
+    "Claude"
+  ],
+  "game": "please-be-happy",
+  "distributions": {
+    "steam": "supported",
+    "itch": "supported",
+    "standalone": "supported",
+    "gog": "untested"
+  },
+  "dependencies": [
+    {
+      "id": "bepinex-5"
+    }
+  ],
+  "channels": {
+    "stable": {
+      "source": "release"
+    }
+  },
+  "install": [
+    {
+      "step": "extract-archive",
+      "requires": {
+        "not": {
+          "fileExists": "${gameDir}/UnityCrashHandler32.exe"
+        },
+        "onMissing": "This is the 32-bit version of Please Be Happy, and the mod only works with the 64-bit version. On itch.io, download the file named \"Windows\" instead of \"Windows 32-bit\", then run this installer again."
+      },
+      "routes": [
+        {
+          "from": "BepInEx/plugins/PleaseBeHappyAccess/**",
+          "to": "${gameDir}/BepInEx/plugins/PleaseBeHappyAccess"
+        }
+      ]
+    },
+    {
+      "step": "expect",
+      "checks": [
+        {
+          "fileExists": "${gameDir}/BepInEx/plugins/PleaseBeHappyAccess/PleaseBeHappyAccess.dll",
+          "message": "The download didn't contain the mod (no PleaseBeHappyAccess.dll)."
+        },
+        {
+          "fileExists": "${gameDir}/BepInEx/plugins/PleaseBeHappyAccess/prism.dll",
+          "message": "The download didn't contain the speech library (no prism.dll)."
+        }
+      ]
+    }
+  ],
+  "packaging": {
+    "artifacts": [
+      {
+        "file": "../dist/PleaseBeHappyAccess.zip"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "mode": "single-mod",
+  "mod": "please-be-happy-access",
+  "title": "Please Be Happy Access Installer",
+  "registries": [
+    "github:shaysters/please-be-happy-access"
+  ],
+  "lockRegistries": true
+}

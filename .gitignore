@@ -1,0 +1,7 @@
+# Decompiled game code stays local — never commit it
+_decompiled/
+bin/
+obj/
+*.user
+.vs/
+dist/

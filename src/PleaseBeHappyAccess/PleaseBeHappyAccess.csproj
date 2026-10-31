@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>PleaseBeHappyAccess</AssemblyName>
+    <RootNamespace>PleaseBeHappyAccess</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <Version>0.9.0</Version>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GameDir Condition="'$(GameDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Please Be Happy</GameDir>
+    <ManagedDir>$(GameDir)\PleaseBeHappy_Data\Managed</ManagedDir>
+    <BepInExCore>$(GameDir)\BepInEx\core</BepInExCore>
+    <PluginDir>$(GameDir)\BepInEx\plugins\PleaseBeHappyAccess</PluginDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx" HintPath="$(BepInExCore)\BepInEx.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(BepInExCore)\0Harmony.dll" Private="false" />
+    <Reference Include="UnityEngine" HintPath="$(ManagedDir)\UnityEngine.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(ManagedDir)\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="Assembly-CSharp" HintPath="$(ManagedDir)\Assembly-CSharp.dll" Private="false" />
+    <Reference Include="Elringus.Naninovel.Runtime" HintPath="$(ManagedDir)\Elringus.Naninovel.Runtime.dll" Private="false" />
+    <Reference Include="UnityEngine.UI" HintPath="$(ManagedDir)\UnityEngine.UI.dll" Private="false" />
+    <Reference Include="UnityEngine.UIModule" HintPath="$(ManagedDir)\UnityEngine.UIModule.dll" Private="false" />
+    <Reference Include="UnityEngine.TextRenderingModule" HintPath="$(ManagedDir)\UnityEngine.TextRenderingModule.dll" Private="false" />
+    <Reference Include="Unity.TextMeshPro" HintPath="$(ManagedDir)\Unity.TextMeshPro.dll" Private="false" />
+    <Reference Include="UnityEngine.ScreenCaptureModule" HintPath="$(ManagedDir)\UnityEngine.ScreenCaptureModule.dll" Private="false" />
+    <Reference Include="UnityEngine.ImageConversionModule" HintPath="$(ManagedDir)\UnityEngine.ImageConversionModule.dll" Private="false" />
+    <Reference Include="UnityEngine.UnityWebRequestModule" HintPath="$(ManagedDir)\UnityEngine.UnityWebRequestModule.dll" Private="false" />
+    <Reference Include="Unity.InputSystem" HintPath="$(ManagedDir)\Unity.InputSystem.dll" Private="false" />
+    <Reference Include="Naninovel.Common" HintPath="$(ManagedDir)\Naninovel.Common.dll" Private="false" />
+  </ItemGroup>
+
+  <!-- Development builds: the scripted test driver lives in a separate, private folder next to this
+       repository (PleaseBeHappy_A11y_Dev). When it's there it's built in; release builds pass
+       /p:DevTools=false, and anyone building without that folder gets the mod alone. -->
+  <PropertyGroup>
+    <DevToolsDir>$(MSBuildThisFileDirectory)..\..\..\PleaseBeHappy_A11y_Dev\src</DevToolsDir>
+    <UseDevTools Condition="'$(DevTools)' != 'false' And Exists('$(DevToolsDir)')">true</UseDevTools>
+    <DefineConstants Condition="'$(UseDevTools)' == 'true'">$(DefineConstants);DEV_TOOLS</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(UseDevTools)' == 'true'">
+    <Compile Include="$(DevToolsDir)\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\lib\prism.dll" Link="prism.dll" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <!-- Copies the mod into the game's BepInEx plugins folder. Skip with /p:SkipDeploy=true. -->
+  <Target Name="DeployToGame" AfterTargets="Build" Condition="'$(SkipDeploy)' != 'true'">
+    <MakeDir Directories="$(PluginDir)" />
+    <Copy SourceFiles="$(OutDir)$(AssemblyName).dll;$(OutDir)prism.dll" DestinationFolder="$(PluginDir)" />
+    <ItemGroup>
+      <DescriptionFiles Include="..\..\descriptions\*.tsv" />
+    </ItemGroup>
+    <Copy SourceFiles="@(DescriptionFiles)" DestinationFolder="$(PluginDir)\descriptions" />
+  </Target>
+
+</Project>

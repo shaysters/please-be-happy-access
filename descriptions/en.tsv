@@ -1,0 +1,409 @@
+# Please Be Happy Access — English image descriptions. key<TAB>text
+skip/black	-
+skip/white	-
+skip/letterbox	-
+# Backgrounds and CGs. Key: bg/<actor id>/<appearance>, or bg/<appearance> for any actor.
+bg/airport	Wellington Skyport, arrivals. A bright, airy terminal hall under a pale blue sky; queue barriers of posts and black straps lead to a covered gateway with signs above it, and pink blossom trees lean in at the edges.
+bg/alley	An alleyway in the city by day. Tall pale buildings close in on both sides, their walls dotted with framed posters and a café menu board; a narrow lane with yellow road markings runs ahead into soft sunlight.
+bg/alley_night	The same narrow city alleyway at night, washed in deep blue. The posters and doorways are dim, and the lane fades into darkness between the tall buildings.
+bg/aspenhome_cloudy	Aspen's home, on a grey day. A small, cosy studio flat: a kitchenette with a stove on the left, a plaid coat hanging by the door, a bed with blue covers and a plush corgi on it, a half-unpacked cardboard box, shelves of books and plants, a suitcase by the curtained window, and a little desk with a lamp.
+bg/aspenhome_day	Aspen's home by day. Sunlight fills the small studio flat: kitchenette on the left, plaid coat by the door, the blue-covered bed with a plush corgi, an open cardboard box, shelves of books, photos and plants, a suitcase under the window and a tidy desk.
+bg/aspenhome_evening	Aspen's home in the evening. Warm orange sunset light pours through the window of the small studio flat, over the blue bed, the plush corgi, the unpacked box and the cluttered little desk.
+bg/aspenhome_nightoff	Aspen's home at night, lights off. The studio flat is dim and blue, the curtains drawn; only a string of fairy lights along the wall glows softly above the bed and shelves.
+bg/beach_cloudy	Oriental Bay on an overcast day. A long curve of pale sand meets calm turquoise water; across the bay, white apartment blocks climb a green hillside under a flat grey-blue sky.
+bg/beach_day	Oriental Bay on a sunny day. A wide, curving beach of pale sand and clear turquoise water, with a promenade wall along the shore and white apartment buildings dotting the green hills beyond, under a bright blue sky.
+bg/beach_evening	Oriental Bay at sunset. The sky glows peach and orange, the sea and sand are tinted pink, and the hillside buildings across the bay stand in dark silhouette.
+bg/beach_night	Oriental Bay at night. A starry sky over dark water; the lights of the hillside apartments and the promenade reflect in golden streaks across the bay, and the sand is a soft violet grey.
+bg/bellhouse_cloudy	Inside Bellhouse Café on a cloudy day. A light, plant-filled café: a wooden counter with a pastry case, an espresso machine and shelves of coffee bags on the left, round wooden tables and stools across a pale floor, glass terrariums hanging from the ceiling, and tall windows with greenery trailing down them.
+bg/bellhouse_day	Inside Bellhouse Café by day. Sunlight floods through the tall windows onto round wooden tables and stools; the long counter on the left holds a pastry display, an espresso machine and shelves of coffee, and glass terrariums with little plants hang from the ceiling.
+bg/bellhouse_evening	Inside Bellhouse Café in the evening. The same plant-filled café, its wooden counter, round tables and hanging terrariums all bathed in warm amber light.
+bg/bellhouseext_day	Bellhouse Café from the street, by day. A handsome two-storey corner building with tall windows and window boxes; vines drape over the shop front, flower beds run along the pavement, and traffic lights and a no-entry sign stand at the crossing in front.
+bg/bellhouseext_evening	Bellhouse Café from the street at sunset. The vine-covered corner building and its crossing glow in warm pink and orange light.
+bg/bellhouseext_night	Bellhouse Café from the street at night. Under a starry sky the vine-covered corner building is dark, its upstairs windows glowing warm yellow and the traffic lights shining red at the empty crossing.
+bg/busstation	The bus station at dusk. A long white coach with green leaf patterns along its side waits under a curved glass shelter, with city buildings beyond in amber evening light.
+bg/busstation_day	The bus station by day. A long white coach painted with green leafy vines waits beside the curved glass shelter, under a clear blue sky.
+bg/cemetery_night	Bolton Street Cemetery at night. Old headstones and stone crosses stand crooked in the dark grass beneath big shadowy trees, with a tall white cross monument in the middle and a footpath curving past on the right; city lights glimmer behind.
+bg/cubarun	Cuba Street, blurred with motion, as if seen while running past: red brick paving, rainbow banners, flowers and a fountain streaking by.
+bg/cubastreet_cloudy	Cuba Street on a grey day. A pedestrian street paved in red brick: rainbow banners hang from a lamp post, a tall iron sculpture of hanging flower buckets rises from a stone-edged pool, a small blue-roofed play gazebo stands further down, and potted plants and a chalkboard sign line the way between shopfronts.
+bg/cubastreet_day	Cuba Street on a sunny day. A lively red-brick pedestrian street under blue sky, with rainbow banners on a lamp post, a tall iron frame of colourful hanging flower buckets over a stone pool, a blue-roofed children's play gazebo, bikes, potted plants and a chalkboard sign outside the shops.
+bg/cubastreet_evening	Cuba Street at sunset. The red-brick street, rainbow banners and the hanging-bucket fountain glow in warm orange and pink light as the sun sets at the far end.
+bg/cubastreet_night	Cuba Street at night. Street lamps and shop windows cast warm light over the red brick, the rainbow banners and the hanging-bucket fountain, under a black, starry sky.
+bg/den_bright	The den in the forest, in bright light. A small hollow cave under a grassy, flower-covered mound, framed by big tree trunks, with a sandy clearing in front and sunlight dappling the leaves.
+bg/den_cloudy	The den on a cloudy day. The little cave under its mossy, flowering mound sits in grey-green shade between the trees, the sandy clearing in front pale and quiet.
+bg/den_day	The den by day. A cosy cave mouth beneath a mound of grass and small yellow flowers, tucked between forest trees, with a patch of sandy ground in front and soft, warm light.
+bg/den_night	The den at night. The forest is dark blue and green; the cave beneath its flowered mound is a black opening, and the clearing in front is grey in the dim light.
+bg/den_rain	The den in the rain. Dark, wet forest around the little cave; puddles shine on the clearing in front.
+bg/edgeofworld	The Edge of the World, at night. In a field of blue grass under a starry sky, a tall chain-link fence runs across, and set into it is a small wooden building with an arched double door, like a lonely gate.
+bg/forest_day	A forest by day. Slender brown trunks crowd together over thick green undergrowth, with a pale dirt path crossing the clearing and a few red flowers in the grass.
+bg/forest_night	A forest at night. Dark trunks and shadowy undergrowth in shades of grey-green, with a pale path running through the clearing.
+bg/forestrun	The night forest, blurred with motion, as if racing along the path between the dark trees.
+bg/garden1_day	The Botanical Garden gates by day. Two red-brick gateposts with stone caps and old black lanterns, wrought-iron gates swung open, and curving brick walls with arched openings; inside, a path leads up between lush trees and a tall palm under a blue sky. Black bollards stand on the road in front.
+bg/garden1_evening	The Botanical Garden gates at sunset. The red-brick gateposts, lanterns and open iron gates glow in warm golden light, the trees beyond dark against an orange sky.
+bg/garden1_night	The Botanical Garden gates at night. The two lanterns on the brick gateposts are lit, shining over the open archways, the bollards and the empty road; the garden beyond is dark.
+bg/garden2_evening	Inside the Botanical Garden at sunset. A red-brick path runs between hedges and planted beds past wooden benches to an open, eight-sided glass-and-wood pavilion with seats inside; palms and a forested hill rise behind under an orange sky.
+bg/garden2_night	Inside the Botanical Garden at night. The brick path, benches and open glass pavilion are dark and still beneath the shadowy trees and hill.
+bg/hallway1_closed	Juliet's home, the entryway. A bright, tidy hall with cream walls and wooden floors: a closed panelled front door at the end, a framed landscape painting and a curtained window on the left, a cushioned bench, a red runner rug, a chair beside a little table with a potted plant, an oval portrait of a woman on the wall, and a polished wooden staircase rising on the right.
+bg/hallway1_closedlight	Juliet's home, the entryway, with the curtains closed and the light on: the front door, the bench and red rug, the oval portrait and the wooden staircase, in soft lamplight.
+bg/hallway1_day	Juliet's home, the entryway, by day. Daylight comes through the window by the curtain, over the front door, the bench, red runner rug, chair and plant, the oval portrait and the wooden staircase on the right.
+bg/hallway1_nightoff	Juliet's home, the entryway at night with the lights off. The hall is dim and bluish; the front door, the portrait and the staircase are deep in shadow.
+bg/hallway1_nighton	Juliet's home, the entryway at night with the lights on. Warm light fills the hall; the window beside the door shows the dark night outside.
+bg/hallway2_day	Juliet's home, upstairs, by day. A landing with deep blue walls and a wooden floor: a tall gilt-framed mirror, a shelf with a blue jar, a small table with a vase of dried flowers, a door to the left, and a closed bedroom door straight ahead with a little wreath on it and a portrait beside it; the top of the stair railing shows on the right.
+bg/hallway2_doorlight	Juliet's home, upstairs at night. The blue landing is dark, but warm light glows around the edges of the closed door straight ahead.
+bg/hallway2_nightoff	Juliet's home, upstairs at night with the lights off. The blue landing, the tall mirror, the side table and the closed door ahead are all in deep shadow.
+bg/hallway2_nightoff_flip	Juliet's home, the upstairs landing at night, seen from the other direction: the dark blue walls, the tall mirror on the right, the stair railing on the left and the closed door ahead.
+bg/hills_day	A grassy hillside on a sunny day. Golden-green grass slopes gently upward under a bright blue sky with puffy white clouds; two leafy trees stand together on the left and another leans in from the right edge.
+bg/hills_evening	The grassy hillside at sunset. The slope and the two trees are bathed in gold, under a sky fading from pink to orange.
+bg/hills_night	The grassy hillside at night. The slope and the trees are dark blue shapes beneath a black sky with a thin crescent moon and a few faint stars.
+bg/hillsrun	The sunny grassy hillside, blurred with motion, as if running across it past the two trees.
+bg/innercemetery	Inside Bolton Street Cemetery by day. Old, weathered headstones lean in long green grass along a worn footpath, shaded by tall trees with a palm in the distance and sunlight breaking through the leaves.
+bg/kitchen_day	Juliet's home, the kitchen, by day. A warm room with deep red walls: a wooden dining table with a vase of pink lilies and bentwood chairs sits under a window with a scalloped blind, a lace parasol hangs on the wall, a cream fridge with notes stands on the left, and a wooden door and an old stove with a wall clock are on the right.
+bg/kitchen_daycurtain	Juliet's home, the kitchen, with the blind pulled down. The red-walled room, the table with its lilies and bentwood chairs, the hanging parasol, fridge and door, in soft, filtered daylight.
+bg/kitchen_nightoff	Juliet's home, the kitchen at night with the lights off. The red room is almost black; the table, lilies, chairs and closed blind are faint shapes in the dark.
+bg/kitchen_nightoffnopara	Juliet's home, the kitchen at night with the lights off. The room is dark, the blind is down, and the lace parasol no longer hangs on the wall.
+bg/kitchen_nightopen	Juliet's home, the kitchen at night with the lights on and the blind up; the window shows the dark night sky behind the vase of pink lilies on the table.
+bg/kitchen_noparasol	Juliet's home, the kitchen by day, with daylight and greenery outside the window, but the lace parasol is gone from the wall.
+bg/kitchen_nosun	Juliet's home, the kitchen, the blind drawn against the sun: a warm, dim room around the table with its pink lilies, the parasol on the wall.
+bg/library_cloudy	The library on a cloudy day. A wood-panelled room lined floor to ceiling with bookshelves and a rolling ladder; a heavy wooden desk with a computer, a framed landscape painting of cliffs and sea above it, a tall potted plant, a basket of returns, a white chair by a small round table, and a patterned rug on the floor.
+bg/library_day	The library by day. Sunlight streams through the doorway and windows into the wood-panelled room, over the tall bookshelves and ladder, the big desk with its computer, the painting of a seaside cliff and the patterned rug.
+bg/library_evening	The library in the evening. Golden-orange sunset light fills the doorway and warms the bookshelves, desk and rug.
+bg/library_nightoff	The library at night with the lights off. The shelves, ladder and desk are dark shapes; a little blue moonlight falls across the chair and rug.
+bg/library_nighton	The library at night with the lamps on. Warm light falls over the tall bookshelves, the ladder, the big desk and the patterned rug, while the doorway behind the desk is dark.
+bg/lookout_cloudy	The Mount Victoria lookout on a grey day. A curved metal railing runs around a paved platform with an information board and a coin-operated telescope; beyond, the city and harbour spread out below green slopes under heavy cloud.
+bg/lookout_day	The Mount Victoria lookout on a sunny day. From the paved platform, past the railing, the information board and the coin telescope, the whole city and its blue harbour stretch out below, ringed by hills under a pale blue sky.
+bg/lookout_evening	The Mount Victoria lookout at sunset. The railing, telescope and information board stand against a glowing orange sky, the city below darkening into purple.
+bg/mihoroom_day	Miho's room by day. A cosy attic bedroom with green walls and a sloping wooden ceiling: a single bed with white frilled sheets, a wooden chest at its foot, a small window bright with daylight, a shelf with jars, an old boxy television on a little table in the corner, and a wooden table with a white vase of wildflowers in front.
+bg/mihoroom_evening	Miho's room in the evening. The green attic bedroom with its frilled bed, old television and vase of flowers; the window shows the dark blue sky outside.
+bg/mihoroom_moon	Miho's room at night, lit by the moon. A pale blue beam of moonlight falls through the small window across the frilled white bed; the rest of the attic room is dark.
+bg/mihoroom_night	Miho's room at night. The green attic bedroom is dim, the window dark blue, the bed, television and the vase of flowers in shadow.
+bg/mihoroomnotv_day	Miho's room by day, without the television: the green attic bedroom with its sloped wooden ceiling, frilled white bed, sunny little window, shelf of jars and the vase of wildflowers on the table.
+bg/mihoroomnotv_night	Miho's room at night, without the television: the dim green attic, the dark window, the white bed and the vase of flowers in shadow.
+bg/mtvic	Mount Victoria, the view over Wellington. From high on the green hillside, the city's buildings crowd around a bright blue harbour with long wharves, and forested hills rise behind under a hazy sky.
+bg/mtvicstreet_day	The road up Mount Victoria by day. A narrow road curves uphill between grassy banks, shaded by tall twisting trees, with a glimpse of city towers at the top under a blue sky.
+bg/mtvicstreet_evening	The road up Mount Victoria at sunset. The winding road and the tall trees are lit in warm gold, the sky orange behind the hilltop.
+bg/mtvicstreet_night	The road up Mount Victoria at night. The road winds up into darkness beneath the black silhouettes of the trees, under a starry sky.
+bg/mtvicstreet_overcast	The road up Mount Victoria on an overcast day. The curving road and tall trees under a grey sky, the light flat and cool.
+bg/park_day	Hataitai Park by day. A wide green sports field with tall goalposts and floodlight poles, low white clubhouses at the far end and a wooded hill rising on the right, under a blue sky with white clouds.
+bg/park_evening	Hataitai Park at sunset. The empty sports field, goalposts and floodlights stand against an amber sky, the clubhouses and the wooded hill falling into shadow.
+bg/pier_dawn	The fishing pier at dawn. An empty concrete pier with black mooring bollards and a traffic cone along its edge, wooden crates in the corner, and calm, pale blue water stretching to low hills across the harbour.
+bg/pier_day	The fishing pier by day. Fishing rods lean over the railing on little stands beside lanterns and a traffic cone; a green notice board, a blue chilly bin and a red tackle box sit at the end, and the bright harbour and distant hills lie beyond under a blue sky.
+bg/pier_evening	The fishing pier at sunset. The rods, lanterns, crates and green notice board are silhouetted against golden water and an orange sky.
+bg/pier_night	The fishing pier at night. Small lanterns glow along the edge beside the propped-up fishing rods, under a dark, starry sky over black water.
+bg/rainbow	A rainbow arching across a bright blue sky over soft white and pink clouds, with tiny sparkles like stars.
+bg/restaurant	The seafood restaurant. A casual, industrial-style eatery: an open kitchen with a steel counter and shelves on the left, a big black hood hanging from the ceiling, walls of mismatched wooden planks, and rows of wooden tables with stools and cutlery pots.
+bg/sky	An open blue sky with big, soft white clouds.
+bg/study_dark	Juliet's home, the study, in the dark. Floor-to-ceiling bookshelves crammed with books surround a wooden desk lit only by a small candle lamp; a white chair, stacks of books on the floor, and a white cloth draped over another chair.
+bg/study_day	Juliet's home, the study, by day. A room walled with tall bookshelves full of old books; a wooden desk with a lamp, a glass and some papers in the middle, a white chair, piles of books on the floor, and a white cloth over the chair behind the desk.
+bg/tepapa_day	Te Papa, the national museum, by day. A big modern building of sandstone-coloured tiles and glass with a sweeping roof, a glass entrance canopy, a tall sign with a fingerprint symbol out front and flagpoles, under a blue sky.
+bg/tepapa_evening	Te Papa at sunset. The museum's tiled walls, glass entrance and fingerprint sign glow in warm pink and orange light.
+bg/waterfront_day	The Waterfront by day. A wide paved walkway beside the harbour, edged with round stone balls; a cable bridge leads off ahead, a red sculpture of a leaping figure stands on a plinth on the right, and old harbour buildings and a crane rise behind.
+bg/waterfront_evening	The Waterfront at sunset. The walkway, the cable bridge and the red leaping-figure sculpture are tinted pink and orange, the harbour glowing gold.
+bg/waterfront_night	The Waterfront at night. Lamps light the walkway with blue and gold; the red sculpture, the bridge and the harbour buildings stand under a starry sky.
+bg/wildlife_day	The nature reserve by day. A calm blue lake surrounded by thick forest; a narrow white footbridge leads out to a pretty little tower with a red pointed roof standing in the water.
+bg/wildlife_evening	The nature reserve at sunset. The lake shines pink and gold, reflecting the little red-roofed tower and its footbridge, with the forest dark against an orange sky.
+bg/wildlife_night	The nature reserve at night. The lake and forest are deep blue under faint stars; the little pointed tower and its footbridge stand pale on the dark water.
+bg/aspenintro/Aspen>Away	Illustration: Aspen, a young woman with light ash-blonde hair braided up into a bun, round glasses and a ruffled navy blouse, holds an open book and glances away to the side.
+bg/aspenintro/Aspen>Notice	Illustration: Aspen looks up from her book, straight ahead, as if she's just noticed someone, her eyes wide behind her round glasses.
+bg/aspenintro/Aspen>Reading	Illustration: Aspen stands reading a small dark book, her eyes lowered, a calm little smile on her face.
+bg/aspenspill/Miho>Gape,Drink>Whoosh,Aspen>Slip	Illustration at the café counter: Aspen, in a white shirt with a green apron and red straps, slips as she reaches across the counter, and a bubble tea flies through the air towards Miho, a dark-haired girl with fox ears in a black sleeveless top, who stares in open-mouthed surprise.
+bg/aspenspill/Miho>Unimpressed,Drink>Splat,Aspen>Worry	Illustration at the café counter: the drink has landed with a splat, spilling green tea across the counter in front of Miho, who looks on, flat and unimpressed, while Aspen raises a hand, flustered and worried.
+bg/cg_bg/AspenComfyBG	Illustration background: a doorway with a green door with small glass panes, a potted plant on a stand and an umbrella beside it, the light soft and blurred.
+bg/cg_bg/AspenConfessionBG	Illustration background: the bus station, the white coach with green vines waiting under the shelter, and a blue suitcase standing in the foreground.
+bg/cg_bg/AspenGlowwormBG	Illustration background: deep in the dark forest, among black leaves and ferns, tiny blue-green glowworm lights hang in fine glowing threads.
+bg/cg_bg/AspenIntroBG	Illustration background: a library corner with dark bookshelves and a white curtain blowing in from a sunny window.
+bg/cg_bg/AspenIntroSepia	Illustration in sepia, like an old photograph: Aspen sits in a wooden chair by the bookshelves, a book open in her hands, a white curtain lifting in the breeze from the window beside her, with a mug and an oil lamp on the round table in front.
+bg/cg_bg/AspenKissBG	Illustration background: a sky full of soft gold and pink clouds, the edges darkened by leaves.
+bg/cg_bg/AspenScatterBG	Illustration background: the view from a high balcony railing over Wellington's city and harbour, hazy with sunlight, green hills behind.
+bg/cg_bg/AspenSleepover1	Illustration, seen from above: Aspen asleep in bed, curled on her side on white pillows under a navy blanket, with a plush bear and a little white bunny tucked beside her.
+bg/cg_bg/AspenSleepover2	Illustration, seen from above: Aspen and Miho asleep together in bed, Miho curled against Aspen's back with her fox ears and dark hair spread over the pillow, her fox tail across the blanket, and two cats curled up at their feet.
+bg/cg_bg/AspenSleepover3	Illustration, seen from above: Aspen and Miho asleep side by side in bed, Miho snuggled into Aspen's back, the plush bear and white bunny by the pillow.
+bg/cg_bg/AspenSpillBG	Illustration background: Bellhouse Café's bright windows and balcony railing, softly blurred, with round tables and stools.
+bg/cg_bg/AspenWildBG	Illustration background: a soft, sunlit room in warm beige tones, with lockers, a bookcase, a small easel and a water bottle on a table.
+bg/cg_bg/AspenWorking	Illustration at the library desk: Aspen, in her navy blouse and round glasses, grins and holds a red book up high, while Miho sits beside her at the desk, pen in hand over a sheet of paper, peering up at her, a tall stack of books at her elbow and a framed painting on the wall behind.
+bg/cg_bg/Eavesdrop1	Illustration: Miho, in a dark sailor-collared top, stands pressed against the wall beside a doorway, listening; through the door, in the red-walled kitchen, Juliet in a white shirt and Aspen in a pink beret sit talking at the table.
+bg/cg_bg/Eavesdrop2	Illustration: Miho, still hiding beside the kitchen doorway, turns her head and parts her lips in surprise at what she overhears from Juliet and Aspen at the table inside.
+bg/cg_bg/GroupHug	Illustration: a joyful three-way hug in warm, sunny light. Juliet, in a white cape, wraps her arms around Miho and Aspen; Miho squeezes her eyes shut with a fanged grin in the middle, and Aspen, in a pink beret and round glasses, laughs on the other side.
+bg/cg_bg/JulietBlanketBG	Illustration background: a dim, warm study with wooden drawers along the wall, lit by a faint glow.
+bg/cg_bg/JulietBlanketSleep	Illustration: Juliet has fallen asleep at her desk in the study, her head resting on her arm over an open book, a pen still in her hand, beside a glowing oil lamp.
+bg/cg_bg/JulietComfyBG	Illustration background: a tilted view of a bookshelf and a bedside lamp with a plant, soft and dreamy with circles of light.
+bg/cg_bg/JulietDanceBG	Illustration background: the library in cold blue moonlight, the bookshelves, desk and a chair pale and still.
+bg/cg_bg/JulietGiftBG	Illustration background: a dusty storeroom with an open wooden door and stacked cardboard boxes, a shaft of light full of floating dust, and a small plush bunny on the floor.
+bg/cg_bg/JulietGrave	Illustration: Juliet, in a long white coat and dark boots, holding a white parasol, stands with her back to us in the sunlit cemetery, looking down at a weathered headstone with a bunch of white flowers laid in front of it.
+bg/cg_bg/JulietIntroBG	Illustration background: a tilted view of an open window at night with a curtain blowing in, tall bookshelves alongside.
+bg/cg_bg/JulietIntroSepia	Illustration in sepia, like an old photograph: Juliet, with short dark hair, a ruffled cravat and a pale cape, leans in through a curtained window by the bookshelves, smiling gently and holding out an open hand.
+bg/cg_bg/JulietKissBG	Illustration background: a tilted view of a wooden wall with a hanging lantern, and a dusky purple sky over trees.
+bg/cg_bg/JulietRunAnimal	Illustration: on a moonlit hillside at night, a happy fox with a pearl necklace and a crown of glowing crystal-like tails runs straight towards us, eyes shut in a grin, while a small bat flaps alongside under a crescent moon.
+bg/cg_bg/JulietWalkBG	Illustration background: dark, leafy trees at night, softly blurred.
+bg/cg_bg/JulietWildBG	Illustration background: a tilted view of a wooden door with four bright glass panes, warm light pouring in.
+bg/cg_bg/LenaIntroBG	Illustration background: a tennis court net seen at a tilt, with a green hill and blue sky behind it.
+bg/cg_bg/MihoWistfulBG	Illustration background: the Mount Victoria lookout railing, with the information board and telescope, and the city spread out far below.
+bg/cg_bg/MrKimFinale	Illustration on the fishing pier at sunset: Miho sits hugging her knees, her fox tail curled beside her, next to Mr. Kim, a man with short reddish-brown hair in a navy polo shirt and khaki trousers, who leans back on one hand and gazes out over the golden water; fishing rods rest on the railing behind them.
+bg/cg_bg/MrKimIntroBG	Illustration by the harbour on a bright day: Miho, in a black top, open grey jacket and blue skirt, her grey fox tail showing, stands among a passing crowd and looks round in surprise; behind her walk a man in a green cap and jumper, a green-skinned person with little horns carrying a satchel, and a child.
+bg/cg_bg/SilverIntroBG	Illustration background: a dark night sky with a crescent moon, swirls of cloud and blue beams of light crossing the stars.
+bg/cg_bg/TommyIntroBG	Illustration background: the den in the forest, the little cave under its flowering mound, in soft dreamy light.
+bg/cg_bg/goodmorning	Illustration in Juliet's red-walled kitchen, morning sun streaming through the window: Aspen, in a pink beret, round glasses and navy blouse, sits at the table smiling at us, while Juliet, in her white cape, rests her chin on her hand and smiles too, a vase of pink lilies on the windowsill.
+bg/cg_bg/seonbibright	Illustration: in a forest flooded with golden light, the dark silhouette of a figure in a wide-brimmed hat and long robe stands with its back to us.
+skip/cutinbg	-
+skip/hellomihobg	-
+skip/SilverFarewellBG	-
+skip/TommyFinaleBG	-
+skip/LenaFinaleBG	-
+bg/cg_bg/seonbiforest	Illustration background: a hazy forest in soft golden light, the trees fading into a bright glow.
+bg/cg_bg/silverflashback	Illustration background: a dark forest at night, the pale trunks ghostly against the black, like an old memory.
+bg/cg_cutin/C1-,other>bookmark	Close-up: an open book with a pressed sprig of small yellow flowers tucked between its pages.
+bg/cg_cutin/C1-,other>elemental1	Close-up: a small wooden-framed window with a frosty blue blotch spreading across the glass.
+bg/cg_cutin/C1-,other>fish	Close-up: a huge, shimmering fish with long whiskers and flowing, glowing fins swims through deep blue water full of sparkles and bubbles.
+bg/cg_cutin/C1-,other>scroll	Close-up: an old paper scroll, rolled up and tied with a dark cord.
+bg/cg_cutin/other>scroll,C1-	Close-up: an old paper scroll, rolled up and tied with a dark cord.
+bg/cg_cutin/C1>-,other>beadsglow	Close-up: a string of round white beads lying in a loop, one of them glowing brightly.
+bg/cg_cutin/other>beadsglow,C1-	Close-up: a string of round white beads lying in a loop, one of them glowing brightly.
+bg/cg_cutin/C1>aspenbarista1,other-	Close-up: Aspen at work behind the café counter in her green apron and round glasses, pouring milk from a little jug into a coffee cup.
+bg/cg_cutin/C1>aspenbarista2,other-	Close-up: Aspen at the café counter, pouring milk into a cup with a careful, pleased smile.
+bg/cg_cutin/C1>beads,other-	Close-up: a loop of round white beads, like a pearl necklace.
+bg/cg_cutin/C1>bills,other-	Close-up: a hand holding out a few folded banknotes over a tiled floor.
+bg/cg_cutin/C1>dairy,other-	Close-up: a dim shop fridge with shelves of milk and dairy products.
+bg/cg_cutin/C1>julietexp2,other-	Close-up: Juliet in her white cape and cravat, standing by a curtained window at night, one hand at her arm, looking at us calmly.
+bg/cg_cutin/C1>julietexp3,other-	Close-up: Juliet in the dark, her eyes glowing pale, one hand gripping her arm, her expression serious.
+bg/cg_cutin/C1>mihosky,other-	Close-up: the back of Miho's head, her fox ears pricked and a string of white beads around her neck, as she looks up at a starry night sky.
+bg/cg_cutin/C1>painting,other-	Close-up: a painting in an ornate gold frame of a young woman with long brown hair and a white headband, in a long cream dress, sitting on a chair beside a little table with a vase.
+bg/cg_cutin/C1>wakeup,other-	Close-up, a narrow strip: a tilted glimpse of a window at night and a bookshelf, as if just waking up.
+bg/cg_cutin/C1>wallet,other-	Close-up: a worn brown wallet lying on a tiled floor.
+bg/cg_cutin/other>beadscrack,C1-	Close-up: the loop of white beads, one of them glowing, with a fine crack running across it.
+bg/cg_cutin/other>elemental2	Close-up: the wooden-framed window, the frosty blotch on the glass now shaped like a little face.
+bg/cg_cutin/other>elemental3	Close-up: the window with a frosty little face on the glass that seems to be smiling.
+bg/cg_cutin/other>hurtbird,C1-	Close-up: a small grey bird lying on its side, hurt, its legs in the air.
+bg/cg_cutin/other>museum,C1-	Close-up: a museum display case holding an old hanging scroll above a small carved stone.
+bg/cg_fg/AspenComfy1	Illustration: Miho, in a long dark dress with a yellow belt, leans in close to Aspen, who wears a brown jacket over an orange turtleneck with a bag on her shoulder; Miho's hand rests on Aspen's chest as they gaze at each other, and Aspen tucks a hand into her own hair, smiling shyly.
+bg/cg_fg/AspenComfy2	Illustration: Miho and Aspen, in their cosy autumn clothes, close their eyes and kiss, Miho's hand on Aspen's chest.
+bg/cg_fg/AspenConfession1a	Illustration: Aspen stands in a navy blouse and long beige skirt with a small pink bag on her shoulder, holding a pink hat in front of her with both hands, smiling nervously, her cheeks flushed.
+bg/cg_fg/AspenConfession1b	Illustration: Aspen, holding her pink hat in front of her, closes her eyes in a soft, happy smile.
+bg/cg_fg/AspenConfession1c	Illustration: Aspen, holding her pink hat in front of her, looks at us with a small, shy smile.
+bg/cg_fg/AspenConfession2	Illustration: Aspen, her pink hat in one hand, raises a finger to her lips with a teasing little smile, as if to say "shh".
+bg/cg_fg/AspenGlowworm1	Illustration, lit in glowing blue: Aspen and Miho side by side in the dark, faces turned upward in wonder, Aspen's mouth a little open behind her round glasses.
+bg/cg_fg/AspenGlowworm2	Illustration, lit in glowing blue: Aspen gazes upward in awe while Miho turns to look at her instead, quietly.
+bg/cg_fg/AspenGlowworm3	Illustration, lit in glowing blue: Miho leans in and kisses Aspen's cheek, eyes closed, while Aspen's eyes go wide behind her glasses.
+bg/cg_fg/AspenGlowworm4	Illustration, lit in glowing blue: Aspen and Miho kiss, both with their eyes closed, Miho's dark hair drifting around them.
+bg/cg_fg/AspenIntroFG	A round wooden table with a white mug, a closed book and a tall glass oil lamp.
+bg/cg_fg/AspenKissKiss	Illustration: Miho and Aspen kiss, eyes closed and cheeks flushed, Miho's hands cupping Aspen's face, her fox ears tilted back.
+bg/cg_fg/AspenKissLook	Illustration: Miho and Aspen hold hands close together, faces just apart, blushing and gazing into each other's eyes, their breath misting between them.
+bg/cg_fg/AspenScatterAspen	Illustration: Aspen, seen from the side in her navy blouse and pale skirt, lifts an open hand and lets something glittering drift away on the wind, her face turned up to the sky.
+bg/cg_fg/AspenWild1	Illustration: Aspen, in a loose white cardigan with dark trim, raises a hand to her chest and smiles, mid-sentence.
+bg/cg_fg/AspenWild2	Illustration: Aspen, in her white cardigan, a hand at her chest, opens her mouth as if surprised or about to protest.
+bg/cg_fg/AspenWild3	Illustration: Aspen, in her white cardigan and round glasses, looks up in surprise as Miho, her long black hair in a ponytail tied with a white bow and wearing a fur-trimmed black coat, holds up her copy of Aspen's book and smiles slyly.
+bg/cg_fg/AspenWild4	Illustration: Aspen, in her white cardigan, leans in and kisses Miho, who blushes in her fur-trimmed coat, her hair in a ponytail with a white bow.
+bg/cg_fg/JulietBlanketFG	Illustration: in the dim study, Miho gently draws a soft white blanket over Juliet, who has fallen asleep at her desk on top of an open book, pen in hand, beside a glowing oil lamp. Miho smiles softly.
+bg/cg_fg/JulietComfy1	Illustration: Juliet, in her white high-collared cape, laughs with her eyes closed as she hugs two others close: Lyra, the blonde girl with pointed ears, in a purple beret on one side, and Miho in a white outfit on the other.
+bg/cg_fg/JulietComfy2	Illustration: Juliet, in her white high-collared cape, stands with a hand on her hip and an arm around Miho, who leans into her side and gazes up at her, holding her wrist.
+bg/cg_fg/JulietComfy3	Illustration: Juliet bends down and kisses Miho, both with their eyes closed, Juliet's arms around her.
+bg/cg_fg/JulietDanceDance	Illustration: Juliet, in a crisp white shirt, and Miho, in a dark dress, dance close together, hand in hand, smiling softly into each other's eyes.
+bg/cg_fg/JulietDanceKiss	Illustration: Juliet and Miho, still holding hands in a dancing pose, kiss with their eyes closed.
+bg/cg_fg/JulietGiftChara	Illustration: Juliet, in her white cape and frilled cravat, smiles warmly and holds the hands of Lyra, the blonde girl with pointed ears, in her striped jumper, who looks up at her.
+skip/JulietIntroFG	-
+skip/LenaFinaleShadow	-
+bg/cg_fg/JulietKissKiss	Illustration: Juliet holds Miho close and kisses her, eyes closed, Miho's back to us with her grey jacket slipping off her shoulders and Juliet's hand resting on her bare back.
+bg/cg_fg/JulietKissLook	Illustration: Juliet, in her white uniform-like cape with a ruffled cravat, and Miho, in a black top with her grey jacket hanging off her shoulders, lean close and gaze at each other with small smiles.
+bg/cg_fg/JulietWalkJuliet	Illustration: Juliet, in her white cape and cravat, carries a tall wooden-framed mirror under one arm and looks back over her shoulder at us.
+bg/cg_fg/JulietWild1	Illustration: Miho, in a black halter top with a white jacket slipping off her shoulders, stands beside Juliet and smiles, holding up a small golden pocket watch on a chain; Juliet, in her white cape and cravat, smiles back calmly.
+bg/cg_fg/JulietWild2	Illustration: Miho, holding the gold pocket watch, glances sideways with a shy smile while Juliet laughs, her mouth open.
+bg/cg_fg/JulietWild3	Illustration: Juliet pulls Miho into her arms and kisses her, Miho's eyes closed and cheeks flushed.
+bg/cg_fg/LenaIntroLena	Illustration: Lena, a dark-skinned girl with long brown hair in a low ponytail and small white feathered wings at her ears and back, in a pink tennis polo and pleated skirt, swings a pink racket over her shoulder and holds a tennis ball, laughing as her hair streams out.
+bg/cg_fg/MihoWistfulFG	Illustration: Miho, in her black crop top, white beaded necklace, open grey jacket and dark skirt, stands with her hands in her pockets and looks away into the distance, her fox ears and dark hair stirred by the wind.
+bg/cg_fg/MrKimIntroKim	Illustration: Mr. Kim, in a fishing vest over a blue shirt, grins as he wrestles with a bending fishing rod, while the fisher he's helping, who has glasses and a hooded green gilet over a plaid shirt, grabs the rod in alarm.
+bg/cg_fg/SilverFarewellSilver	Illustration: Silver, a girl with long silvery-lilac hair and pointed animal ears, in a dark close-fitting top, tucks her hair behind one ear and smiles softly, her hair flowing out on the wind.
+bg/cg_fg/SilverIntroSilver	Illustration, in cold blue light: a tall figure in a hooded, tattered cloak with a scarf over the lower half of the face, only the eyes showing, seen from below.
+bg/cg_fg/TommyFinaleChara	Illustration: Tommy holds hands with his parents: his dad Elijah, with short dark hair, in a white shirt with grey sleeves; Tommy in the middle, a small boy with messy brown hair in a red hooded jacket, teary but smiling; and his mum Gwen, with short auburn hair, in a brown jacket over a green top, smiling down at him.
+bg/cg_fg/TommyIntroTommy	Illustration: Tommy, a small boy with messy brown hair and sparkly eyes, peeks over the top of a green picture book that he holds up to his face, beaming.
+bg/cg_fg/hellomiho	Illustration: Miho, with long dark hair, fox ears and golden eyes, in a black top and white beaded necklace, looks up at us with a bright, fanged grin, one hand raised to her head.
+bg/cg_fg/helloskymiho	Illustration: Miho seen from behind, her fox ears up and dark hair tousled, her grey jacket slipping off her shoulders as she stretches her arms up behind her head, glowing softly against the sky.
+bg/cg_fg/helloskymiho2	Illustration: Miho seen from behind, stretching her arms up behind her head, her fox ears hidden in her dark hair, glowing softly against the sky.
+bg/cg_fg/seonbi	Illustration: a young scholar in traditional Korean clothes, a wide-brimmed black gat hat tied under the chin and a dark robe over a beige one, smiles gently and holds out both open hands.
+skip/AspenComfyFG	-
+skip/AspenKissFG	-
+skip/JulietGiftFG	-
+skip/SilverFarewellFG	-
+skip/SilverIntroFG	-
+bg/cg_fg2/AspenGlowwormFG	Strings of glowworm lights dangle from the dark ferns in front.
+bg/cg_fg2/AspenScatterFG	White petals drift past on the wind.
+bg/cg_fg2/JulietWalkMiho	Miho walks alongside, in her black top and pearl-white necklace, looking ahead with a quiet, guarded expression.
+bg/cg_fg2/LenaFinaleChars	Illustration: the play's three leads look up together: Lena as the prince, with her long brown ponytail, a little gold crown and white feathered ears, in a red and cream prince's tunic, smiling with her mouth open; Cyrus as the White Swan behind her, pale, with green hair and a white feathered collar; and a third actor in a black mask and dark feathered costume, grinning.
+bg/cg_fg2/MrKimIntroFish	A big pink and blue fish leaps out of the water, hooked on the fishing line.
+bg/cg_fg2/TommyFinaleGerbie	Gerbie, a little white creature wearing a big pink flower like a hat, floats in the air above.
+bg/cg_fg2/TommyIntroFG	Soft sparkles twinkle in the air.
+bg/cg_fg3/LenaFinaleFG	Confetti and streamers shower down.
+bg/cg_fg3/MrKimIntroFG	Splashes of water and sparkles fly up into the air.
+bg/chaptercard/ch1	Chapter One: Of Foxes and Fables. A painted title card: under a grassy arch, a glowing fox with many tails sits at the mouth of a little cave, a white bead at its feet.
+bg/chaptercard/ch2	Chapter Two: A Life Worth Living. A painted title card: Miho, Aspen and Juliet huddle together among blue hydrangeas in the rain, Juliet holding an umbrella over them, a rainbow behind.
+bg/chaptercard/ch3	Chapter Three: Old Scars and New Friends. A painted title card: Miho stands in her black top, skirt and open green jacket, her fox tail hanging down, while a small three-tailed fox trots beside her.
+bg/chaptercard/ch4a	Chapter Four: Open Ending. A painted title card: Aspen, in a beret, blouse and long skirt, sits curled up holding a cup, surrounded by swirls of bright colour.
+bg/chaptercard/ch4j	Chapter Four: Matters of the Heart. A painted title card: Juliet, in her white cape and tall boots, sits elegantly with a teacup and saucer against a wash of blue and green with white flowers.
+bg/chaptercard/ch5a	Chapter Five: Stray Thoughts. A painted title card: Aspen, barefoot in a navy blouse and long yellow skirt, flings her arms wide and laughs as sheets of paper fly around her against a pink glow.
+bg/chaptercard/ch5j	Chapter Five: Small Wonders. A painted title card: Juliet stands in her white cape with a hand on her chest, smiling, against a deep blue night sky full of little stars.
+bg/crowd/crowd1	A crowd of faceless, faded grey figures walking past in a blur, like a sketch of busy strangers.
+bg/crowd/crowd2	Miho, hood up on her grey jacket, walks through the crowd of faded grey strangers, glancing down at the phone in her hand.
+bgid/happy	A big, shaggy golden dog sitting up, seen from the nose down.
+bg/happy/+base,+dirt,-collar,+tongue	A big, shaggy golden dog sitting up, its fur muddy and matted, no collar, its pink tongue hanging out.
+bg/happy/+collar,-dirt,-tongue	The shaggy golden dog, now clean, wearing a yellow-green collar with a metal buckle, mouth closed.
+bg/happy/-dirt,+collar,-tongue	The shaggy golden dog, now clean, wearing a yellow-green collar with a metal buckle, mouth closed.
+bg/happy/+tongue	The shaggy golden dog with its tongue lolling out happily.
+bg/happy/-collar	The shaggy golden dog, clean, with no collar.
+bg/happy/-dirt,-collar	The shaggy golden dog, clean, with no collar.
+bg/happy/-tongue	The shaggy golden dog with its mouth closed.
+bg/happy/-dirt,-collar,+tongue	The shaggy golden dog, clean and without a collar, its tongue hanging out.
+bg/julietintro/Juliet>Hand	Illustration: Juliet, a young woman with short dark hair and warm brown skin, in a white cape with gold trim and a ruffled cravat, leans in with a calm smile and holds out her hand to us.
+bg/julietintro/Juliet>Notice	Illustration: Juliet, in her white cape, reaches up to pull a book from a high shelf and glances down towards us, as if she's just noticed someone.
+bg/mapBaseFallback/mapbase	The map of Wellington: a pale, hand-drawn street map of the city wrapped around its harbour, with green parks and hills.
+# Characters: char/<id> is read the first time you meet them.
+char/Miho	Miho is a young woman with long, wavy black hair, golden eyes and brown fox ears; sometimes a bushy fox tail shows too. She wears a black sleeveless crop top, a necklace of round white beads, a black band on one arm, a dark skirt, and an olive-grey jacket worn hanging off her shoulders.
+char/Aspen	Aspen is a young woman with light, honey-blonde hair braided into a crown around a low bun, green eyes and round black glasses. She usually wears a dusty pink beret with a bow, a ruffled navy blouse with a ribbon tie, and a long beige skirt.
+char/Juliet	Juliet is a young woman with warm brown skin, short dark hair and grey eyes. She dresses like a dashing gentleman, in a white suit and a white, gold-trimmed cape with a frilled cravat and a gold brooch, and often carries a cane.
+char/Lena	Lena is a young woman with brown skin, long brown hair in a high ponytail, and soft white feathers growing where her ears would be. At the café she wears a white shirt, a black bow and a teal apron.
+char/MrKim	Mr. Kim is a middle-aged man with short dark hair, often under a khaki bucket hat. He wears a navy polo shirt under a many-pocketed fishing vest.
+char/Silver	Silver is a tall young woman with very long, straight silver-grey hair, blue eyes and pointed grey animal ears, in a fitted dark turtleneck. When she first appears she is hidden in a long black hooded cloak with a scarf pulled up over her face, so only her eyes show.
+char/Cello	Cello is a girl with long blue-grey hair in two braids, blue eyes and fin-shaped ears like a fish's, wearing a white sailor-style top with a red neckerchief.
+char/Lyra	Lyra is a girl with a short blonde bob, green eyes and pointed elf ears, wearing a striped navy jumper.
+char/Tommy	Tommy is a small boy with messy brown hair and big blue-violet eyes, wearing a maroon hoodie over a white T-shirt.
+char/Pippa	Pippa is a girl with brown skin, blue eyes, blonde hair in short pigtails and long rabbit ears, wearing a white sailor-style top with a red neckerchief and hugging a blue notebook.
+char/Cyrus	Cyrus is a young man with pale skin, messy green hair, pointed ears, two curling black ram's horns and a green vine-like marking on his cheek, wearing a black T-shirt under a dark hoodie with yellow lining.
+char/Elijah	Elijah, Tommy's dad, is a young man with messy black hair and dark eyes, wearing a white T-shirt with grey sleeves.
+char/Gwen	Gwen is a woman with short auburn hair and grey-blue eyes, wearing a black jacket over a green top, with a red bag on her shoulder.
+char/Fox	A fox with brown fur, golden eyes and a necklace of round white beads, with a fan of many grey-tipped tails behind it.
+char/Gerbie	Gerbie is a tiny white creature that wears a big pink flower like a hat.
+char/Bat	A small brown bat.
+char/Armand	Armand is a boy with tan skin, white hair, blue eyes, small round animal ears and a pair of feathered white wings, wearing a white sailor-style shirt with a red neckerchief.
+# Expression and pose parts, read by F4 ("Miho: smiling, eyes closed").
+part/default	eyes open
+part/default_med	eyes open
+part/default_thin	eyes open, slit pupils
+part/default_dilated	eyes open, wide pupils
+part/default_human	eyes open
+part/closed	eyes closed
+part/uclosed	eyes closed happily
+part/away	looking away
+part/away_med	looking away
+part/away_thin	looking away
+part/away_dilated	looking away
+part/away_human	looking away
+part/gentle	soft gaze
+part/gentle_med	soft gaze
+part/gentle_thin	soft gaze
+part/gentle_dilated	soft gaze
+part/gentle_human	soft gaze
+part/shock	wide-eyed
+part/shock_med	wide-eyed
+part/shock_thin	wide-eyed
+part/shock_dilated	wide-eyed
+part/shock_human	wide-eyed
+part/teary	teary-eyed
+part/teary_med	teary-eyed
+part/closedcry	crying, eyes squeezed shut
+part/uclosedcry	crying happily
+part/starry	starry-eyed
+part/raised	eyebrows raised
+part/worry	worried
+part/angry	angry
+part/relax	relaxed
+part/uneven	one eyebrow raised
+part/smile	smiling
+part/grin	grinning
+part/laugh	laughing
+part/smallopen	mouth slightly open
+part/yell	shouting
+part/frown	frowning
+part/bigfrown	frowning deeply
+part/pout	pouting
+part/eh	unimpressed
+part/bleh	sticking out tongue
+part/wah	wailing
+part/bored	bored
+part/sad	sad
+part/woah	amazed
+part/talking	talking
+part/+blush	blushing
+part/+blushcry	blushing and teary
+part/up	ears up
+part/down	ears drooping
+part/pockets	hands in jacket pockets
+part/pocketsflip	hands in jacket pockets
+part/cheek	hand at cheek
+part/cheekflip	hand at cheek
+part/stretch	stretching
+part/stretchflip	stretching
+part/pockets_comfy	in a loose grey sailor-collared top
+part/cheek_comfy	in a loose grey sailor-collared top, hand at cheek
+part/stretch_comfy	in a loose grey sailor-collared top, stretching
+part/pockets_nojacket	without her jacket, hands on hips
+part/cheek_nojacket	without her jacket, hand at cheek
+part/stretch_nojacket	without her jacket, stretching
+part/+ninetails	tails showing
+part/laced	hands clasped in front
+part/lacedflip	hands clasped in front
+part/ara	hand to her cheek
+part/araflip	hand to her cheek
+part/clutch	hands clutched at her chest
+part/clutchflip	hands clutched at her chest
+part/laced_barista	in her barista apron, hands clasped
+part/lacedflip_barista	in her barista apron, hands clasped
+part/araflip_barista	in her barista apron, hand to her cheek
+part/ara_barista	in her barista apron, hand to her cheek
+part/clutchflip_barista	in her barista apron, hands at her chest
+part/clutch_barista	in her barista apron, hands at her chest
+part/laced_pjs	in pyjamas
+part/lacedflip_pjs	in pyjamas
+part/araflip_pjs	in pyjamas, hand to her cheek
+part/clutchflip_pjs	in pyjamas, hands at her chest
+part/laced_nohat	without her beret
+part/lacedflip_nohat	without her beret
+part/ara_nohat	without her beret, hand to her cheek
+part/araflip_nohat	without her beret, hand to her cheek
+part/clutch_nohat	without her beret, hands at her chest
+part/+glasses	glasses on
+part/-glasses	glasses off
+part/hip_cane	hand on hip
+part/hipflip_cane	hand on hip
+part/tuck_cane	hand tucking back her hair
+part/tuckflip_cane	hand tucking back her hair
+part/hold_cane	hand at her cravat
+part/holdflip_cane	hand at her cravat
+part/hip_casual_cane	in a plain white shirt, hand on hip
+part/hipflip_casual_cane	in a plain white shirt, hand on hip
+part/tuck_casual_cane	in a plain white shirt, tucking back her hair
+part/tuckflip_casual_cane	in a plain white shirt, tucking back her hair
+part/hold_casual_cane	in a plain white shirt
+part/holdflip_casual_cane	in a plain white shirt
+part/hip_umbrella	holding an umbrella, hand on hip
+part/hipflip_umbrella	holding an umbrella, hand on hip
+part/tuckflip_umbrella	holding an umbrella
+part/tuck_umbrella	holding an umbrella
+part/hold_umbrella	holding an umbrella
+part/holdflip_umbrella	holding an umbrella
+part/hold_barista	in her café uniform
+part/holdflip_barista	in her café uniform
+part/hold_casual	in a pink and white jacket
+part/holdflip_casual	in a pink and white jacket
+part/holdflip_tennis	in her pink tennis outfit
+part/hips_fish	hands on hips
+part/hipsflip_fish	hands on hips
+part/hipsflip	hands on hips, no hat
+part/hipsflip_fishnohat	hands on hips, no hat
+part/up_fish	hand behind his head
+part/upflip_fish	hand behind his head
+part/MrKim/up	hand behind his head, no vest
+part/upflip	hand behind his head, no vest
+part/upflip_fishnohat	hand behind his head, no hat
+part/pocket_fish	hand in pocket
+part/pocketflip_fish	hand in pocket
+part/pocket_fishnohat	hand in pocket, no hat
+part/pocketflip_fishnohat	hand in pocket, no hat
+part/pocketflip	hand in pocket, no vest
+part/+sunglasses	wearing sunglasses
+part/cloak	in her hooded cloak
+part/crossed	arms crossed
+part/side	glancing sideways
+part/Fox/tup	tails raised
+part/Fox/tdown	tails lowered
+part/Fox/med	calm
+part/Fox/nwn	content, eyes closed
+part/Fox/owo	curious
+part/Gerbie/+fairy	with fairy wings
+# Start-up screens.
+screen/bootlogo	Studio Élan presents. On cream paper, an ornate round frame with a single flower inside fades in, above the words "studio élan" and "presents" in elegant script.
+screen/title	The title screen: "Please Be Happy" in flowing handwritten letters beneath a small open book with a tasselled charm, over faint pencil sketches of the characters on cream paper.

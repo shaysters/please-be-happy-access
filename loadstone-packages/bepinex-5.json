@@ -1,0 +1,67 @@
+{
+  "manifestVersion": 1,
+  "kind": "tool",
+  "id": "bepinex-5",
+  "name": "BepInEx 5 (64-bit)",
+  "description": "The BepInEx 5 mod loader for 64-bit Unity Mono games. Loads plugins from BepInEx/plugins in the game folder.",
+  "authors": [
+    "BepInEx team"
+  ],
+  "license": "LGPL-2.1",
+  "source": "github:BepInEx/BepInEx",
+  "conflictPolicy": "keep-newer",
+  "pinnedRelease": {
+    "version": "5.4.23.5",
+    "artifacts": [
+      {
+        "file": "BepInEx_win_x64_5.4.23.5.zip",
+        "sha256": "82f9878551030f54657792c0740d9d51a09500eeae1fba21106b0c441e6732c4",
+        "when": {
+          "platform": "windows"
+        }
+      }
+    ]
+  },
+  "install": [
+    {
+      "step": "extract-archive",
+      "requires": {
+        "not": {
+          "fileExists": "${gameDir}/UnityCrashHandler32.exe"
+        },
+        "onMissing": "This is the 32-bit version of Please Be Happy, and the mod only works with the 64-bit version. On itch.io, download the file named \"Windows\" instead of \"Windows 32-bit\", then run this installer again."
+      },
+      "routes": [
+        {
+          "from": "winhttp.dll",
+          "to": "${gameDir}/winhttp.dll"
+        },
+        {
+          "from": "doorstop_config.ini",
+          "to": "${gameDir}/doorstop_config.ini"
+        },
+        {
+          "from": ".doorstop_version",
+          "to": "${gameDir}/.doorstop_version"
+        },
+        {
+          "from": "changelog.txt",
+          "to": "${gameDir}/changelog.txt"
+        },
+        {
+          "from": "BepInEx/**",
+          "to": "${gameDir}/BepInEx"
+        }
+      ]
+    },
+    {
+      "step": "expect",
+      "checks": [
+        {
+          "fileExists": "${gameDir}/winhttp.dll",
+          "message": "BepInEx didn't install (no winhttp.dll next to the game)."
+        }
+      ]
+    }
+  ]
+}

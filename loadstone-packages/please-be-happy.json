@@ -1,0 +1,18 @@
+{
+  "manifestVersion": 1,
+  "kind": "game",
+  "id": "please-be-happy",
+  "name": "Please Be Happy",
+  "detect": {
+    "steam": {
+      "appId": 844670,
+      "dirName": "Please Be Happy"
+    },
+    "markers": [
+      "PleaseBeHappy.exe"
+    ]
+  },
+  "userData": {
+    "windows": "${localLow}/Studio Élan/Please Be Happy"
+  }
+}
