@@ -1,6 +1,6 @@
 # Please Be Happy Access
 
-Please Be Happy Access is a mod that makes Please Be Happy, the visual novel by Studio Élan, playable with a screen reader. It reads the story, choices and every menu, and makes the menus work properly from the keyboard. It describes every background and illustration, describes each character the first time you meet them, and waits for the voice actors to finish before describing a scene. Everything it says is available in all five of the game's languages.
+Please Be Happy Access is a mod that makes Please Be Happy, the visual novel by Studio Élan, playable with a screen reader. It reads the story, choices and every menu, and makes the menus work properly from the keyboard. It describes every background and illustration, describes each character the first time you meet them, and waits for the voice actors to finish before describing a scene. Everything it says is available in all five of the game's languages: English, Japanese, Korean, Simplified Chinese and Traditional Chinese (see "Languages" below).
 
 Speech and braille go through [Prism](https://github.com/ethindp/prism), which talks to NVDA, JAWS and other Windows screen readers, and falls back to Windows' built-in voices if no screen reader is running. Everything the mod says is also sent to your braille display. You play with the keyboard.
 
@@ -128,7 +128,13 @@ Choose **Accessibility** on the title menu (after Help), or press m anywhere, to
 - **Read pop-ups** (on by default): read the game's other pop-ups: achievements, "Game saved!", and the time of day when a new scene starts.
 - **Check for updates when the game starts** (on by default): say when a newer version of the mod is out.
 
-The mod's own messages and all its image descriptions follow the game's language: English, Japanese, Korean, Simplified Chinese or Traditional Chinese. The descriptions use the game's own names for characters and places in each language. The story, menus and choices are read in whatever language the game is set to.
+## Languages
+
+The game is written in five languages: English, Japanese, Korean, Simplified Chinese and Traditional Chinese. It has no Spanish or other languages.
+
+Which of them you can choose depends on your copy. The demo's Language setting (Options, BASIC tab) offers all five. The full game offers only English: the game hides its other languages there. That's the game's choice, not the mod's.
+
+The mod's own messages and all its image descriptions follow the game's language, in any of the five. The descriptions use the game's own names for characters and places in each language. The story, menus and choices are read in whatever language the game is set to.
 
 ## Known limitations
 
@@ -139,7 +145,6 @@ These are known and planned; reports about anything else are very welcome.
 - On the location map, the icons beside each place (main story, time cost, who you might meet) aren't read yet.
 - Minseo has no description yet.
 - The translated descriptions were written by Claude and haven't been reviewed by native speakers yet.
-- The game's Language setting offers only English in the full game from Steam and itch.io. That's the game's choice, not the mod's: the game has no Spanish, and it turns its Japanese, Korean and Chinese text off in these versions. The mod speaks in whatever language the game uses.
 
 ## Troubleshooting
 
