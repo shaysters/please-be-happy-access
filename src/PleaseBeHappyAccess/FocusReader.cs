@@ -202,7 +202,13 @@ namespace PleaseBeHappyAccess
         }
 
         // Map pins have no text; their object names are the place names ("Oriental Bay(Clone)").
-        static string Fallback(string label, GameObject go) => label.Length > 0 ? label : go.name.Replace("(Clone)", "").Trim();
+        // Chapter 1's story-only map stops show a single pin the game leaves unnamed ("Unknown").
+        static string Fallback(string label, GameObject go)
+        {
+            if (label.Length > 0) return label;
+            string name = go.name.Replace("(Clone)", "").Trim();
+            return name == "Unknown" ? Strings.Get("unknownPlace") : name;
+        }
 
         static string TextsIn(GameObject go, bool includeHidden)
         {

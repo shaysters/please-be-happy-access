@@ -2,6 +2,11 @@
 
 All notable changes to Please Be Happy Access. Newest first.
 
+## 0.9.2 (2026-10-31)
+
+### Fixed
+- On chapter 1's map, the single unnamed pin that leads to the next scene was read as "Unknown, button". It is now read as "Next story location, not named yet, button" (reported on Discord).
+
 ## 0.9.1 (2026-10-31)
 
 ### Fixed

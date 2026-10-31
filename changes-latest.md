@@ -1,11 +1,8 @@
-A small fix for drop-down lists in Options.
+A small fix for the map in chapter 1.
 
 ## Fixed
 
-- In an open drop-down list, the arrow keys now stay in the list and stop at its first and last entries. Before, Down on the last entry left the list for the next setting without choosing anything. This was easy to hit with the Language list, which has only English.
-- Each entry in a drop-down list now says its position, such as "English, chosen, 1 of 1" or "Windowed, option, 3 of 3".
-
-A note on languages: the game's Language setting offers only English in the full game from Steam and itch.io. That's the game's own choice: it has no Spanish, and it turns its Japanese, Korean and Chinese text off in these versions. The mod speaks in whatever language the game uses.
+- At a few points in chapter 1, the map offers a single pin for a place the story hasn't named yet. The mod read it as "Unknown, button", which sounded like a strange choice. It now says "Next story location, not named yet, button". It's the only place to go, so press it to carry on with the story. Thanks to the player on Discord who reported it.
 
 ## Installing or updating
 

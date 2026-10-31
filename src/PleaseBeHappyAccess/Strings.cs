@@ -167,6 +167,14 @@ namespace PleaseBeHappyAccess
                 ["zh-CN"] = "按回车返回到这一句",
                 ["zh-TW"] = "按Enter返回到這一句",
             },
+            ["unknownPlace"] = new Dictionary<string, string>
+            {
+                ["en"] = "Next story location, not named yet",
+                ["ja"] = "次の物語の場所（名前はまだ不明）",
+                ["ko"] = "다음 이야기 장소, 아직 이름 모름",
+                ["zh-CN"] = "下一个剧情地点，尚未得知名称",
+                ["zh-TW"] = "下一個劇情地點，尚未得知名稱",
+            },
             ["someone"] = new Dictionary<string, string>
             {
                 ["en"] = "Someone", ["ja"] = "誰か", ["ko"] = "누군가", ["zh-CN"] = "某人", ["zh-TW"] = "某人",
