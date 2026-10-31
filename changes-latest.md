@@ -17,6 +17,6 @@ You need the 64-bit Windows version of the game (on itch.io, the "Windows" downl
 - Everything the mod says is in all five of the game's languages.
 - Tells you at start-up when a newer version is out.
 
-Known limitations are listed in the README. Questions, problems and ideas are welcome on the [Discord](https://discord.gg/KNDXhztGGK).
+Known limitations are listed in the README. Questions, problems and ideas are welcome on the [Discord](https://discord.gg/KNDXhztGGK). If you'd like to support shaysters, there's [Ko-fi](https://ko-fi.com/shaysters).
 
 See [CHANGELOG.md](https://github.com/shaysters/please-be-happy-access/blob/main/CHANGELOG.md) for the full list of changes.
