@@ -7,7 +7,7 @@ Speech and braille go through [Prism](https://github.com/ethindp/prism), which t
 - Join the Discord to chat, get help or report problems: <https://discord.gg/KNDXhztGGK>
 - Support shaysters on Ko-fi: <https://ko-fi.com/shaysters>
 
-Status: version 0.9.0, the first public release. Nearly complete; see "Known limitations" for what is still to come. See [CHANGELOG.md](CHANGELOG.md) for what has changed.
+Status: version 0.9.1. Nearly complete; see "Known limitations" for what is still to come. See [CHANGELOG.md](CHANGELOG.md) for what has changed.
 
 ## Requirements
 
@@ -139,6 +139,7 @@ These are known and planned; reports about anything else are very welcome.
 - On the location map, the icons beside each place (main story, time cost, who you might meet) aren't read yet.
 - Minseo has no description yet.
 - The translated descriptions were written by Claude and haven't been reviewed by native speakers yet.
+- The game's Language setting offers only English in the full game from Steam and itch.io. That's the game's choice, not the mod's: the game has no Spanish, and it turns its Japanese, Korean and Chinese text off in these versions. The mod speaks in whatever language the game uses.
 
 ## Troubleshooting
 

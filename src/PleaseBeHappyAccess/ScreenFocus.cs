@@ -308,10 +308,30 @@ namespace PleaseBeHappyAccess
             return false;
         }
 
+        /// <summary>The entries of the open drop-down list that holds this one, top to bottom.</summary>
+        internal static List<Toggle> DropdownItems(Toggle item)
+        {
+            Transform list = item.transform;
+            while (list != null && list.name != "Dropdown List") list = list.parent;
+            if (list == null) return new List<Toggle> { item };
+            return list.GetComponentsInChildren<Toggle>(false).Where(t => t.IsInteractable()).ToList();
+        }
+
         /// <summary>Next/previous control for Up/Down, or null to leave Unity's choice alone.</summary>
         internal static Selectable Step(Selectable from, int direction)
         {
-            if (current.Count == 0 || from == null || !InCurrentScreen(from.transform) || InDropdownList(from.transform)) return null;
+            if (current.Count == 0 || from == null || !InCurrentScreen(from.transform)) return null;
+            // In an open drop-down list, move between its entries and stop at the ends; Unity's own
+            // choice left the list for the next setting (Down on Language's only entry went to Window Mode).
+            if (InDropdownList(from.transform))
+            {
+                if (!(from is Toggle item)) return null;
+                List<Toggle> items = DropdownItems(item);
+                int at = items.IndexOf(item);
+                if (at < 0) return null;
+                int to = at + direction;
+                return to >= 0 && to < items.Count ? items[to] : from;
+            }
             List<Selectable> controls = Controls();
             int i = controls.IndexOf(from);
             if (i < 0) return controls.FirstOrDefault();
@@ -364,13 +384,13 @@ namespace PleaseBeHappyAccess
         }
     }
 
-    /// <summary>Left/Right keep Unity's spatial choice, but never into a hidden menu behind the screen.</summary>
+    /// <summary>Left/Right keep Unity's spatial choice, but never into a hidden menu behind the screen or out of an open list.</summary>
     [HarmonyPatch(typeof(Selectable), nameof(Selectable.FindSelectableOnLeft))]
     internal static class FindLeftPatch
     {
         static void Postfix(Selectable __instance, ref Selectable __result)
         {
-            if (ScreenFocus.LeavesScreen(__instance, __result) || __result is Scrollbar || (__result != null && __result.name == "CloseRibbon")) __result = null;
+            if (ScreenFocus.InDropdownList(__instance.transform) || ScreenFocus.LeavesScreen(__instance, __result) || __result is Scrollbar || (__result != null && __result.name == "CloseRibbon")) __result = null;
         }
     }
 
@@ -379,7 +399,7 @@ namespace PleaseBeHappyAccess
     {
         static void Postfix(Selectable __instance, ref Selectable __result)
         {
-            if (ScreenFocus.LeavesScreen(__instance, __result) || __result is Scrollbar || (__result != null && __result.name == "CloseRibbon")) __result = null;
+            if (ScreenFocus.InDropdownList(__instance.transform) || ScreenFocus.LeavesScreen(__instance, __result) || __result is Scrollbar || (__result != null && __result.name == "CloseRibbon")) __result = null;
         }
     }
 }

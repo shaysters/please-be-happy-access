@@ -2,6 +2,12 @@
 
 All notable changes to Please Be Happy Access. Newest first.
 
+## 0.9.1 (2026-10-31)
+
+### Fixed
+- In an open drop-down list in Options, the arrow keys now stay in the list and stop at its first and last entries. Before, Down on the last entry left the list for the next setting without choosing anything (reported with the Language list, which has only English).
+- Each entry in a drop-down list now says its position, such as "1 of 1" or "2 of 3".
+
 ## 0.9.0 (2026-10-31)
 
 The first public release. It includes everything from the development versions below.

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMPro;
@@ -81,8 +82,13 @@ namespace PleaseBeHappyAccess
             // choices for one setting (Music Cues: Enabled/Disabled).
             if (sel is Toggle toggle && toggle.group != null) return DescribeGroupToggle(toggle);
             // An open drop-down list: each entry is a choice, the ticked one is the current value.
+            // Its position too, so a list with one entry (Language offers only English) is clearly that.
             if (sel is Toggle item && ScreenFocus.InDropdownList(item.transform))
-                return Fallback(TextsIn(go, includeHidden: false), go) + ", " + Strings.Get(item.isOn ? "chosen" : "notChosen");
+            {
+                List<Toggle> items = ScreenFocus.DropdownItems(item);
+                return Fallback(TextsIn(go, includeHidden: false), go) + ", " + Strings.Get(item.isOn ? "chosen" : "notChosen")
+                    + ", " + string.Format(Strings.Get("itemOf"), items.IndexOf(item) + 1, items.Count);
+            }
             sb.Append(LabelOf(go));
             // Voice volume rows have a button that plays a sample line.
             if (sel is Button && go.name.Contains("Test")) sb.Append(", ").Append(Strings.Get("playSample"));

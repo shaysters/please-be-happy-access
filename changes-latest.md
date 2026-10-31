@@ -1,22 +1,16 @@
-The first public release of Please Be Happy Access: a mod that makes Please Be Happy, the visual novel by Studio Élan, playable with a screen reader. Speech and braille go through Prism, which works with NVDA, JAWS and other screen readers, or Windows' own voices.
+A small fix for drop-down lists in Options.
 
-## Installing
+## Fixed
 
-Download **PleaseBeHappyAccessInstaller.exe** below and run it. It installs BepInEx 5.4.23.5 and the mod, and checks every download. Steam copies are found automatically; for itch.io, GOG or the demo, choose the game folder with Browse... The full instructions, including installing by hand with **PleaseBeHappyAccess.zip**, are in the [README](https://github.com/shaysters/please-be-happy-access#readme).
+- In an open drop-down list, the arrow keys now stay in the list and stop at its first and last entries. Before, Down on the last entry left the list for the next setting without choosing anything. This was easy to hit with the Language list, which has only English.
+- Each entry in a drop-down list now says its position, such as "English, chosen, 1 of 1" or "Windowed, option, 3 of 3".
 
-You need the 64-bit Windows version of the game (on itch.io, the "Windows" download, not "Windows 32-bit").
+A note on languages: the game's Language setting offers only English in the full game from Steam and itch.io. That's the game's own choice: it has no Spanish, and it turns its Japanese, Korean and Chinese text off in these versions. The mod speaks in whatever language the game uses.
 
-## What it does
+## Installing or updating
 
-- Reads the story as it's printed, with the speaker's name, and the voiced lines too (v turns that off).
-- Makes every menu work from the keyboard and reads it: the title menu, Options and its tabs, saving and loading with slot details, the backlog, choices, the location map, Extras (including the patrons list), Help and yes/no questions.
-- Describes every background and illustration as it appears, and each character the first time you meet them, after the voice actor has finished. The d key describes the scene at any time; r repeats the last line or reads the open menu.
-- Reads pop-ups: song names, achievements, "Game saved!" and the time of day.
-- Lines that are only "..." are read as "Ellipsis".
-- Settings live in the game: choose Accessibility on the title menu, or press m.
-- Everything the mod says is in all five of the game's languages.
-- Tells you at start-up when a newer version is out.
+Download **PleaseBeHappyAccessInstaller.exe** below and run it; it updates an existing install too. To install by hand, extract **PleaseBeHappyAccess.zip** into the game folder. The full instructions are in the [README](https://github.com/shaysters/please-be-happy-access#readme).
 
-Known limitations are listed in the README. Questions, problems and ideas are welcome on the [Discord](https://discord.gg/KNDXhztGGK). If you'd like to support shaysters, there's [Ko-fi](https://ko-fi.com/shaysters).
+Questions, problems and ideas are welcome on the [Discord](https://discord.gg/KNDXhztGGK). If you'd like to support shaysters, there's [Ko-fi](https://ko-fi.com/shaysters).
 
 See [CHANGELOG.md](https://github.com/shaysters/please-be-happy-access/blob/main/CHANGELOG.md) for the full list of changes.
