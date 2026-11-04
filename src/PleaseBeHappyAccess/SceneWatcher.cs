@@ -246,7 +246,7 @@ namespace PleaseBeHappyAccess
         /// The name the game shows. Until the story introduces someone the game shows "???", so we say
         /// "Someone" rather than give their name away. Actors with no display name at all use their id.
         /// </summary>
-        static string Name(string id)
+        internal static string Name(string id)
         {
             string name = TextUtil.Clean(Engine.GetService<ICharacterManager>()?.GetDisplayName(id));
             if (TextUtil.IsReadable(name)) return name;
@@ -288,7 +288,8 @@ namespace PleaseBeHappyAccess
             // The parts the script last set, e.g. "closed,uneven,small,down,stretch".
             ScriptCharacter.TryGetValue(ch.Id, out string parts);
             var words = (parts ?? "").Split(',')
-                .Select(p => p.Trim())
+                // Some characters' parts are named with their layer, e.g. Minseo's "Eyes>uclosed".
+                .Select(p => p.Trim().Substring(p.Trim().IndexOf('>') + 1))
                 // A part can mean different things per character ("up": Miho's ears, Mr. Kim's arm).
                 .Select(p => Descriptions.Get($"part/{ch.Id}/{p}") ?? Descriptions.Get("part/" + p))
                 .Where(w => !string.IsNullOrEmpty(w))

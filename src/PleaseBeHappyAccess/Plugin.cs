@@ -10,7 +10,7 @@ namespace PleaseBeHappyAccess
     public class Plugin : BaseUnityPlugin
     {
         public const string Guid = "shaysters.pleasebehappy.access";
-        public const string VersionString = "0.9.2";
+        public const string VersionString = "1.0.0";
 
         void Awake()
         {
@@ -60,6 +60,7 @@ namespace PleaseBeHappyAccess
             Run("ModMenu", ModMenu.Tick);
             if (!ModMenu.Open)
             {
+                Run("Gallery", Gallery.Tick);
                 Run("ScreenFocus", ScreenFocus.Tick);
                 Run("SceneWatcher", SceneWatcher.Tick);
                 Run("FocusReader", FocusReader.Tick);
@@ -101,12 +102,17 @@ namespace PleaseBeHappyAccess
                 Settings.ReadVoicedLines.Value = !Settings.ReadVoicedLines.Value;
                 Speech.Say(Strings.Get(Settings.ReadVoicedLines.Value ? "voicedOn" : "voicedOff"), interrupt: true);
             }
-            // D: describe the scene — backgrounds, CGs, and who is on screen with their expression.
-            if (kb.dKey.wasPressedThisFrame) SceneWatcher.DescribeScene();
+            // D: describe the scene — backgrounds, CGs, and who is on screen with their expression — or the open gallery picture.
+            if (kb.dKey.wasPressedThisFrame)
+            {
+                if (Gallery.Showing) Gallery.Repeat();
+                else SceneWatcher.DescribeScene();
+            }
             // R: read the open screen's text, or repeat the last line during the story.
             if (kb.rKey.wasPressedThisFrame)
             {
-                if (ScreenFocus.HasScreen) ScreenFocus.ReadScreen();
+                if (Gallery.Showing) Gallery.Repeat();
+                else if (ScreenFocus.HasScreen) ScreenFocus.ReadScreen();
                 else Speech.Say(PrintTextPatch.LastLine ?? Strings.Get("noText"), interrupt: true);
             }
         }

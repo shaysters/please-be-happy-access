@@ -7,7 +7,7 @@ Speech and braille go through [Prism](https://github.com/ethindp/prism), which t
 - Join the Discord to chat, get help or report problems: <https://discord.gg/KNDXhztGGK>
 - Support shaysters on Ko-fi: <https://ko-fi.com/shaysters>
 
-Status: version 0.9.1. Nearly complete; see "Known limitations" for what is still to come. See [CHANGELOG.md](CHANGELOG.md) for what has changed.
+Status: version 1.0.0. Every part of the game is read and works from the keyboard. See [CHANGELOG.md](CHANGELOG.md) for what has changed.
 
 ## Requirements
 
@@ -45,7 +45,7 @@ C:\Program Files (x86)\Steam\steamapps\common\Please Be Happy Demo
 
 ### Updating
 
-When the game starts, the mod checks once whether a newer version is out. If there is one, it says so after the title screen appears, for example "Please Be Happy Access 1.0.0 is available. To update, close the game and run Please Be Happy Access Installer." Run the installer again and choose Update; it replaces the old files and removes any that the new version no longer uses. You can turn the check off in the mod's settings. The check only downloads the release information from GitHub; it sends nothing about you or your game.
+When the game starts, the mod checks once whether a newer version is out. If there is one, it says so after the title screen appears, for example "Please Be Happy Access 1.0.1 is available. To update, close the game and run Please Be Happy Access Installer." Run the installer again and choose Update; it replaces the old files and removes any that the new version no longer uses. You can turn the check off in the mod's settings. The check only downloads the release information from GitHub; it sends nothing about you or your game.
 
 The installer can also repair the mod (reinstall the same version) and uninstall it.
 
@@ -76,13 +76,14 @@ The game's own keys:
 | Enter or Space | Story | Continue to the next line. |
 | Escape | Story | Open the pause menu: Return, Log, Save, Load, Options, Help, Title. |
 | l or Page Up | Story | Open the backlog. |
-| Backspace | Story | Show or hide the quick menu. |
+| Backspace | Story | Show or hide the quick menu: Log, Q.Save, Q.Load, Skip, Auto, Options, Menu. |
 | k | Story | Turn auto mode on or off. |
 | Tab | Story | Turn skipping on or off. Hold Ctrl to skip only while held. |
 | h | Story | Hide the game's interface. |
 | Up and Down | Menus, choices, map | Move between options. |
 | Left and Right | Menus | Change sliders, and move along rows such as the Options tabs. |
 | Enter | Menus, choices, map | Select. |
+| [ and ] | Extras gallery | Turn to the previous or next page of a picture. |
 | Escape | Menus | Go back. |
 
 The mod's keys:
@@ -94,6 +95,7 @@ The mod's keys:
 | r | Story | Repeat the last line. |
 | r | Menus | Read all the text on the screen, such as help tips and descriptions. |
 | d | Story | Describe the scene: the background or illustration, and who is on screen with their expression. |
+| d or r | Extras gallery | Describe the open picture again. |
 
 These keys don't work while Ctrl or Alt is held.
 
@@ -105,7 +107,9 @@ Notes:
 - Yes/no questions, such as returning to the title, read the question first, then the Yes and No buttons.
 - Tabs that are mostly text, such as Help's QUICK TIPS and CONTROLS, read their text when they open. In Extras, locked entries are counted, for example "??? Locked! (46 of these)".
 - In the backlog, the mod starts on the newest line. Up goes back through earlier lines; Enter on a line goes back to that point in the story.
-- On the location map, each place is read by name. Places you can't go to are read as unavailable.
+- On the location map, each place is read by name, then its icons: who you'll meet there ("someone you haven't met" if you don't know their name yet), whether it's the main story, a new story or a story that continues, and whether going there takes time. For example "Hataitai Park, button, Lena, a new story, takes time". Places you can't go to are read as unavailable.
+- The quick menu (Backspace) says "Quick menu" and moves the keyboard to its first button. Up and Down move through Log, Q.Save, Q.Load, Skip, Auto, Options and Menu; Enter uses one without moving the story on. Backspace hides it again, and r repeats the last line while it's open.
+- In the Extras gallery, opening an unlocked picture reads its title and describes it. Pictures with several pages say which page you're on, for example "Page 2 of 4", and [ and ] turn the pages. Escape closes the picture and goes back to the gallery.
 - Options opens on the open tab's first setting and says which tab it is. Up goes to the tab row (BASIC, TEXT, SOUND, VOICE); Enter on a tab opens it and moves to its first setting.
 - Groups of choices, such as Music Cues, say the row, the choice and what's currently chosen.
 - In an open drop-down list, Escape closes just the list.
@@ -138,13 +142,9 @@ The mod's own messages and all its image descriptions follow the game's language
 
 ## Known limitations
 
-These are known and planned; reports about anything else are very welcome.
-
-- The quick menu (Backspace) isn't read yet. Its actions have keys of their own (k for auto, Tab or Ctrl to skip), and saving and loading are in the pause menu.
-- Viewing an unlocked picture in the Extras gallery doesn't describe it yet.
-- On the location map, the icons beside each place (main story, time cost, who you might meet) aren't read yet.
-- Minseo has no description yet.
 - The translated descriptions were written by Claude and haven't been reviewed by native speakers yet.
+
+If you find anything else, please report it on the [Discord](https://discord.gg/KNDXhztGGK).
 
 ## Troubleshooting
 
@@ -176,7 +176,9 @@ The build copies the mod into the game's `BepInEx\plugins\PleaseBeHappyAccess` f
 | `Speech.cs` | Prism speech and braille output |
 | `DialoguePatches.cs` | Reads each printed line (hook on Naninovel's `TextPrinterManager.PrintTextAsync`) and notes voiced lines |
 | `FocusReader.cs` | Reads whatever menu option has keyboard focus |
-| `ScreenFocus.cs` | Gives menus focus when they open, keeps Up and Down inside them, tab rows, Escape in drop-downs, screen intros, r screen reading |
+| `ScreenFocus.cs` | Gives menus focus when they open, keeps Up and Down inside them, tab rows, Escape in drop-downs, screen intros, r screen reading, the quick menu |
+| `Gallery.cs` | Extras gallery pictures: title, page and description, and Escape closing just the picture |
+| `MapIcons.cs` | The icons beside each place on the location map |
 | `SplashPatches.cs` | The Studio Élan logo and the title screen |
 | `PopupPatches.cs` | Pop-ups: Naninovel's `ToastUI.Show` (songs, achievements, notices) and the time-of-day card (`z04TimeDatePopup`, `z04NavigationAssetManager`) |
 | `SceneWatcher.cs`, `Descriptions.cs` | Background, illustration and character announcements (from the script's own image names, via Naninovel's `OnCommandExecutionStart`), waiting for voice clips; the d key |

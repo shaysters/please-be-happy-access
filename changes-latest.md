@@ -1,8 +1,19 @@
-A small fix for the map in chapter 1.
+Please Be Happy Access 1.0: every part of the game is now read and works from the keyboard.
+
+## New
+
+- **Quick menu.** Backspace during the story opens the quick menu; the mod says "Quick menu" and moves to its first button. Up and Down go through Log, Q.Save, Q.Load, Skip, Auto, Options and Menu, and Enter uses one without moving the story on. Backspace hides it again.
+- **Gallery pictures.** In Extras, opening an unlocked picture reads its title and describes it. Pictures with several pages say which page you're on, and [ and ] turn the pages. d or r describes the picture again, and Escape closes it. The guest artists' pictures and the logos have descriptions of their own.
+- **Map icons.** Each place on the location map now also says who you'll meet there, whether it's the main story, a new story or a story that continues, and whether going there takes time. For example: "Hataitai Park, button, Lena, a new story, takes time".
+- **Minseo** is described the first time you meet her.
 
 ## Fixed
 
-- At a few points in chapter 1, the map offers a single pin for a place the story hasn't named yet. The mod read it as "Unknown, button", which sounded like a strange choice. It now says "Next story location, not named yet, button". It's the only place to go, so press it to carry on with the story. Thanks to the player on Discord who reported it.
+- Escape in a gallery picture closes just the picture; in the game itself it also left the Extras screen.
+- After Q.Save, the keyboard stays on Q.Save.
+- The close-up of Aspen at the café counter is now described correctly: she looks up in surprise.
+
+Everything new is in all five of the game's languages.
 
 ## Installing or updating
 

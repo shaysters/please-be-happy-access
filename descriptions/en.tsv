@@ -157,7 +157,7 @@ bg/cg_cutin/other>scroll,C1-	Close-up: an old paper scroll, rolled up and tied w
 bg/cg_cutin/C1>-,other>beadsglow	Close-up: a string of round white beads lying in a loop, one of them glowing brightly.
 bg/cg_cutin/other>beadsglow,C1-	Close-up: a string of round white beads lying in a loop, one of them glowing brightly.
 bg/cg_cutin/C1>aspenbarista1,other-	Close-up: Aspen at work behind the café counter in her green apron and round glasses, pouring milk from a little jug into a coffee cup.
-bg/cg_cutin/C1>aspenbarista2,other-	Close-up: Aspen at the café counter, pouring milk into a cup with a careful, pleased smile.
+bg/cg_cutin/C1>aspenbarista2,other-	Close-up: Aspen at the café counter, still pouring milk into a cup, looks up in surprise, her eyes wide behind her round glasses and her mouth a little open.
 bg/cg_cutin/C1>beads,other-	Close-up: a loop of round white beads, like a pearl necklace.
 bg/cg_cutin/C1>bills,other-	Close-up: a hand holding out a few folded banknotes over a tiled floor.
 bg/cg_cutin/C1>dairy,other-	Close-up: a dim shop fridge with shelves of milk and dairy products.
@@ -269,7 +269,8 @@ char/Fox	A fox with brown fur, golden eyes and a necklace of round white beads, 
 char/Gerbie	Gerbie is a tiny white creature that wears a big pink flower like a hat.
 char/Bat	A small brown bat.
 char/Armand	Armand is a boy with tan skin, white hair, blue eyes, small round animal ears and a pair of feathered white wings, wearing a white sailor-style shirt with a red neckerchief.
-# Expression and pose parts, read by F4 ("Miho: smiling, eyes closed").
+char/Minseo	Minseo appears on a laptop screen, in a video call: a young woman with long, straight black hair parted in the middle and thin dark-rimmed glasses, in an open blue shirt over a white top, with a pale room and a potted plant behind her.
+# Expression and pose parts, read by the d key ("Miho: smiling, eyes closed").
 part/default	eyes open
 part/default_med	eyes open
 part/default_thin	eyes open, slit pupils
@@ -404,6 +405,25 @@ part/Fox/med	calm
 part/Fox/nwn	content, eyes closed
 part/Fox/owo	curious
 part/Gerbie/+fairy	with fairy wings
+part/Minseo/open	talking
+part/Minseo/o	mouth open in surprise
 # Start-up screens.
 screen/bootlogo	Studio Élan presents. On cream paper, an ornate round frame with a single flower inside fades in, above the words "studio élan" and "presents" in elegant script.
 screen/title	The title screen: "Please Be Happy" in flowing handwritten letters beneath a small open book with a tasselled charm, over faint pencil sketches of the characters on cream paper.
+
+# Extras gallery pictures that the story doesn't show the same way. Key: gallery/<picture name>
+gallery/aspenintro1	Illustration: Aspen, with light ash-blonde hair braided up into a bun, round glasses and a ruffled navy blouse, sits in a wooden chair by tall bookshelves holding a small dark book, and looks at us with a calm, gentle face. A white curtain lifts in the breeze from the sunny window beside her, and a white mug and a glass oil lamp stand on the round table in front.
+gallery/aspenintro2	Illustration: Aspen sits by the bookshelves with her book held up, turning her face away towards the sunny window, where the white curtain lifts in the breeze.
+gallery/aspenintro3	Illustration: Aspen looks straight at us from her chair, eyes wide behind her round glasses and lips slightly parted, as if she's just noticed someone, her book still in her hands.
+gallery/julietexp1	Illustration: Juliet stands by a curtained window at night in her white cape and ruffled cravat, one hand holding her arm, her eyes glowing a pale blue as she looks at us with a calm, serious face.
+gallery/JulietRunHuman	Illustration: under a crescent moon, Miho and Juliet run hand in hand across a dark hillside, both laughing with their eyes shut. Miho, with wavy dark hair, fox ears and a pearl necklace, wears a black sleeveless top and a dark skirt; Juliet's white cape billows out behind her.
+gallery/guest1_yuukipudding	Guest art: Miho, with wavy dark hair, fox ears and golden eyes, blushing and grinning to show a fang, walks through a sunny field of golden wheat under a blue sky, a green jacket slipping off her shoulders, holding hands with two people on either side of her, just out of the picture.
+gallery/guest2_konett	Guest art: a painterly portrait of Juliet, with short dark hair and dark eyes, in a white shirt with a ruffled cravat and a gold brooch, looking at us with a calm, serious face in soft light.
+gallery/guest3_lovelandisle	Guest art in bright pastel colours: a cheerful Miho, with long wavy dark hair, fox ears and a fox tail, carries a big plate of fruit and sweets, grapes, a banana and apples, while above her, in a thought bubble, little chibi versions of Juliet and Aspen hold hands, among sugar cubes, teacups and hearts.
+gallery/guest4_huixci	Guest art: Aspen, with long light-brown hair, round glasses and a navy blouse, holds a book to her chest and touches her cheek, smiling softly, framed by a golden oval mirror with leaves around its base.
+gallery/guest5_z04	Guest art: Juliet, with short dark hair and violet eyes, in a white shirt with an open collar, leans back against a red wall by a sunlit window, one hand raised, giving us a small, knowing smile.
+gallery/guest6_caps	Guest art in a simple, flat style: Aspen, in round glasses, a white shirt and a blue apron, walks along smiling with a coffee cup on a saucer, while a little grey fox with a white bead necklace trots beside her, against a pale background patterned with coffee cups and bells.
+gallery/guest7_katz	Guest art: Miho stands against a white background, with long dark hair, fox ears and golden eyes, in a black sleeveless crop top, a pearl necklace, a dark pleated skirt and black stockings, her tail behind her, touching her necklace and looking at us shyly.
+gallery/guest8_adi	Guest art: Miho, with long dark hair and fox ears, in a pale yellow hanbok, lies among pink and white hibiscus flowers with one hand raised to her hair, as yellow butterflies flutter all around her.
+gallery/galleryGameLogo	Logo: the game's title in flowing dark red handwriting over a pale open book outlined in soft rainbow colours.
+gallery/galleryTitleLogo	Title-screen logo: a small open book with a knotted tassel, drawn in brown lines, above the game's title in flowing handwriting.

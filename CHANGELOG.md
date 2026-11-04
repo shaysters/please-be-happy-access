@@ -2,6 +2,20 @@
 
 All notable changes to Please Be Happy Access. Newest first.
 
+## 1.0.0 (2026-11-04)
+
+### Added
+- The quick menu (Backspace) is read and works from the keyboard: it says "Quick menu", moves to its first button, and Up and Down go through Log, Q.Save, Q.Load, Skip, Auto, Options and Menu. Backspace hides it again.
+- Extras gallery: opening an unlocked picture reads its title and describes it. Pictures with several pages say "Page 2 of 4" and so on, and [ and ] turn the pages. d or r describes the open picture again. New descriptions, in all five languages, for the guest artists' pictures, the logos and the story pictures shown differently in the gallery.
+- Location map: each place also says its icons: who you'll meet there, whether it's the main story, a new story or a story that continues, and whether going there takes time.
+- Minseo's description, in all five languages, and her expressions with d.
+
+### Fixed
+- Enter on a quick menu button no longer also moves the story on a line.
+- Escape while a gallery picture is open closes just the picture. In the game itself it also left the Extras screen.
+- After Q.Save, the keyboard stays on Q.Save instead of jumping back to the first button.
+- The close-up of Aspen at the café counter said she was smiling; she looks up in surprise. Corrected in all five languages.
+
 ## 0.9.2 (2026-10-31)
 
 ### Fixed

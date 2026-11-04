@@ -26,6 +26,21 @@ namespace PleaseBeHappyAccess
             "ScriptNavigator", "ExternalScripts", "SceneTransition", "UI Skip", "UI Auto", "MovieUI",
         };
 
+        /// <summary>
+        /// The quick menu's bar is always on screen, slid out of sight until Backspace slides it in. It counts
+        /// as a screen while it's in (its "hide" button is showing instead of its "show" button).
+        /// </summary>
+        const string QuickMenu = "PBHQuickMenu";
+
+        /// <summary>True while the quick menu is the open screen.</summary>
+        internal static bool InQuickMenu => current.Any(ui => ui != null && ui.name == QuickMenu);
+
+        static bool QuickMenuOpen(MonoBehaviour ui)
+        {
+            Transform hide = ui.transform.Find("QuickMenuButtonHideQM");
+            return hide != null && hide.gameObject.activeInHierarchy;
+        }
+
         /// <summary>The sidebar that opens beside main-menu pages; its controls go after the page's own.</summary>
         const string Sidebar = "PBHNavigation";
 
@@ -56,14 +71,18 @@ namespace PleaseBeHappyAccess
         {
             DropdownWasOpen = current.Any(ui => ui != null && ui.GetComponentsInChildren<TMPro.TMP_Dropdown>(false).Any(d => d.IsExpanded));
             if (!Engine.Initialized) return;
+            // A gallery picture covers the Extras screen; Gallery looks after focus until it closes.
+            if (Gallery.Showing) return;
             IUIManager uiManager = Engine.GetService<IUIManager>();
             if (uiManager == null) return;
 
             bool changed = false;
             foreach (IManagedUI ui in uiManager.GetManagedUIs())
             {
-                if (!(ui is MonoBehaviour mb) || ui is UITextPrinterPanel || IsNotScreen(mb)) continue;
-                bool visible = ui.Visible && mb.isActiveAndEnabled;
+                if (!(ui is MonoBehaviour mb) || ui is UITextPrinterPanel) continue;
+                bool quickMenu = mb.name == QuickMenu;
+                if (!quickMenu && IsNotScreen(mb)) continue;
+                bool visible = ui.Visible && mb.isActiveAndEnabled && (!quickMenu || QuickMenuOpen(mb));
                 if (visible && !shownAtFrame.ContainsKey(ui))
                 {
                     shownAtFrame[ui] = Time.frameCount;
@@ -130,11 +149,28 @@ namespace PleaseBeHappyAccess
                 }
             }
             bool lost = selected == null || !selected.activeInHierarchy;
+            if (!lost && InCurrentScreen(selected.transform)) lastFocused = selected;
             bool waiting = focusAtFrame >= 0 && Time.frameCount < focusAtFrame;
             bool due = focusAtFrame >= 0 && !waiting;
             if (waiting || (!due && !lost)) return;
             focusAtFrame = -1;
             if (!lost && InCurrentScreen(selected.transform)) return;
+            // The game dropped focus while the screen stayed open: go back to that control. Q.SAVE switches
+            // itself off while it saves (which drops focus), so give it a moment to come back.
+            if (lost && !due && lastFocused != null && lastFocused.activeInHierarchy && InCurrentScreen(lastFocused.transform)
+                && lastFocused.GetComponent<Selectable>() is Selectable before)
+            {
+                if (lostAt < 0) lostAt = Time.realtimeSinceStartup;
+                if (before.IsInteractable())
+                {
+                    lostAt = -1;
+                    FocusReader.Quiet = true;
+                    es.SetSelectedGameObject(lastFocused);
+                    return;
+                }
+                if (Time.realtimeSinceStartup - lostAt < 1f) return;
+            }
+            lostAt = -1;
             List<Selectable> controls = Controls();
             // In the backlog, start on the newest line (the last entry), like reading back from where you were.
             Selectable first = controls.LastOrDefault(s => FocusReader.BacklogMessageOf(s.transform) != null)
@@ -155,6 +191,8 @@ namespace PleaseBeHappyAccess
             Traverse.Create(typeof(ScriptableUIBehaviour)).Property("FocusOnNavigation").SetValue(null);
         }
 
+        static GameObject lastFocused;
+        static float lostAt = -1;
         static Toggle lastTab;
         static Toggle pendingTab;
         static float pendingTabAt;
@@ -228,6 +266,7 @@ namespace PleaseBeHappyAccess
         static void AnnounceIntro()
         {
             var parts = new List<string>();
+            if (current.Any(ui => ui != null && ui.name == QuickMenu)) parts.Add(Strings.Get("quickMenu"));
             foreach (MonoBehaviour ui in current)
             {
                 if (ui == null || !Intros.TryGetValue(ui.name, out string[] paths)) continue;
@@ -259,6 +298,8 @@ namespace PleaseBeHappyAccess
                     if (TextUtil.IsReadable(s) && !parts.Contains(s)) parts.Add(s);
                 }
             }
+            // The quick menu has no text of its own; repeat the story line, as r does in the story.
+            if (parts.Count == 0 && InQuickMenu && PrintTextPatch.LastLine != null) parts.Add(PrintTextPatch.LastLine);
             Speech.Say(parts.Count > 0 ? TextUtil.Sentences(parts) : Strings.Get("noText"), interrupt: true);
         }
 
@@ -296,7 +337,9 @@ namespace PleaseBeHappyAccess
                         // Scroll bars only move the view; they aren't settings.
                         && !(s is Scrollbar)
                         // The confirmation's invisible full-screen "close" ribbon; its question is read as the intro.
-                        && s.name != "CloseRibbon"));
+                        && s.name != "CloseRibbon"
+                        // The quick menu's show/hide tabs; Backspace does the same.
+                        && !s.name.StartsWith("QuickMenuButton")));
             }
             return result;
         }
@@ -362,6 +405,19 @@ namespace PleaseBeHappyAccess
     {
         static bool Prefix(MihoKitBindableUIActionLabeledButton __instance) =>
             !(ScreenFocus.DropdownWasOpen && __instance.inputActionBindingName == "returnToSuperview");
+    }
+
+    /// <summary>
+    /// The quick menu doesn't pause the story, so Enter on one of its buttons also moved the story on a
+    /// line (Enter is Naninovel's Continue key too). While it's open, Continue is left to its buttons.
+    /// </summary>
+    [HarmonyPatch(typeof(InputManager), nameof(InputManager.IsSampling))]
+    internal static class QuickMenuContinuePatch
+    {
+        static void Postfix(string bindingName, ref bool __result)
+        {
+            if (__result && bindingName == InputConfiguration.ContinueName && ScreenFocus.InQuickMenu) __result = false;
+        }
     }
 
     [HarmonyPatch(typeof(Selectable), nameof(Selectable.FindSelectableOnDown))]

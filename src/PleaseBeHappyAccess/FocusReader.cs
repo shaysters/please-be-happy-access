@@ -21,6 +21,9 @@ namespace PleaseBeHappyAccess
         /// <summary>Set when a screen introduction was just spoken, so the first item queues after it.</summary>
         public static bool QueueNext;
 
+        /// <summary>Set when focus goes back to the control it was just on, which needn't be read again.</summary>
+        public static bool Quiet;
+
         /// <summary>Reads the selected control again on the next tick (after the mod settings close).</summary>
         public static void Reannounce()
         {
@@ -32,11 +35,14 @@ namespace PleaseBeHappyAccess
         {
             EventSystem es = EventSystem.current;
             GameObject selected = es != null ? es.currentSelectedGameObject : null;
+            // While a gallery picture is open, the menu behind it isn't in use.
+            if (Gallery.Showing) return;
             if (selected != lastSelected)
             {
                 lastSelected = selected;
                 lastValue = ValueOf(selected);
-                if (selected != null)
+                if (selected != null && Quiet) Quiet = false;
+                else if (selected != null)
                 {
                     Speech.Say(Describe(selected), interrupt: !QueueNext);
                     QueueNext = false;
@@ -102,6 +108,8 @@ namespace PleaseBeHappyAccess
                 _ => null,
             };
             if (role != null) sb.Append(", ").Append(role);
+            // Map places: who's there and what kind of visit it is, from the icons beside the pin.
+            if (MapIcons.Describe(go) is string icons) sb.Append(", ").Append(icons);
             string value = ValueOf(go);
             if (!string.IsNullOrEmpty(value)) sb.Append(", ").Append(value);
             // The open tab of a tab row is a switched-on toggle the game greys out; call it selected, not unavailable.

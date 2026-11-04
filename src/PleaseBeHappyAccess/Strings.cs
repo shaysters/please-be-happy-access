@@ -167,6 +167,26 @@ namespace PleaseBeHappyAccess
                 ["zh-CN"] = "按回车返回到这一句",
                 ["zh-TW"] = "按Enter返回到這一句",
             },
+            ["mapMain"] = new Dictionary<string, string>
+            {
+                ["en"] = "main story", ["ja"] = "メインストーリー", ["ko"] = "메인 스토리", ["zh-CN"] = "主线剧情", ["zh-TW"] = "主線劇情",
+            },
+            ["mapNewStory"] = new Dictionary<string, string>
+            {
+                ["en"] = "a new story", ["ja"] = "新しい物語", ["ko"] = "새로운 이야기", ["zh-CN"] = "新的故事", ["zh-TW"] = "新的故事",
+            },
+            ["mapStoryContinues"] = new Dictionary<string, string>
+            {
+                ["en"] = "story continues", ["ja"] = "物語の続き", ["ko"] = "이야기의 계속", ["zh-CN"] = "故事继续", ["zh-TW"] = "故事繼續",
+            },
+            ["mapTakesTime"] = new Dictionary<string, string>
+            {
+                ["en"] = "takes time", ["ja"] = "時間が進む", ["ko"] = "시간이 흐름", ["zh-CN"] = "会消耗时间", ["zh-TW"] = "會消耗時間",
+            },
+            ["someoneNew"] = new Dictionary<string, string>
+            {
+                ["en"] = "someone you haven't met", ["ja"] = "まだ会っていない誰か", ["ko"] = "아직 만나지 못한 누군가", ["zh-CN"] = "还没见过的人", ["zh-TW"] = "還沒見過的人",
+            },
             ["unknownPlace"] = new Dictionary<string, string>
             {
                 ["en"] = "Next story location, not named yet",
@@ -179,6 +199,34 @@ namespace PleaseBeHappyAccess
             {
                 ["en"] = "Someone", ["ja"] = "誰か", ["ko"] = "누군가", ["zh-CN"] = "某人", ["zh-TW"] = "某人",
             },
+            ["pageOf"] = new Dictionary<string, string>
+            {
+                ["en"] = "Page {0} of {1}", ["ja"] = "{1}枚中{0}枚目", ["ko"] = "{1}장 중 {0}번째", ["zh-CN"] = "第{0}张，共{1}张", ["zh-TW"] = "第{0}張，共{1}張",
+            },
+            ["logoLanguage"] = new Dictionary<string, string>
+            {
+                ["en"] = "The {0} version", ["ja"] = "{0}版", ["ko"] = "{0}판", ["zh-CN"] = "{0}版", ["zh-TW"] = "{0}版",
+            },
+            ["language.en"] = new Dictionary<string, string>
+            {
+                ["en"] = "English", ["ja"] = "英語", ["ko"] = "영어", ["zh-CN"] = "英文", ["zh-TW"] = "英文",
+            },
+            ["language.ja"] = new Dictionary<string, string>
+            {
+                ["en"] = "Japanese", ["ja"] = "日本語", ["ko"] = "일본어", ["zh-CN"] = "日文", ["zh-TW"] = "日文",
+            },
+            ["language.ko"] = new Dictionary<string, string>
+            {
+                ["en"] = "Korean", ["ja"] = "韓国語", ["ko"] = "한국어", ["zh-CN"] = "韩文", ["zh-TW"] = "韓文",
+            },
+            ["language.zh-CN"] = new Dictionary<string, string>
+            {
+                ["en"] = "Simplified Chinese", ["ja"] = "簡体字中国語", ["ko"] = "중국어 간체", ["zh-CN"] = "简体中文", ["zh-TW"] = "簡體中文",
+            },
+            ["language.zh-TW"] = new Dictionary<string, string>
+            {
+                ["en"] = "Traditional Chinese", ["ja"] = "繁体字中国語", ["ko"] = "중국어 번체", ["zh-CN"] = "繁体中文", ["zh-TW"] = "繁體中文",
+            },
             ["noImage"] = new Dictionary<string, string>
             {
                 ["en"] = "Nothing described here.", ["ja"] = "説明できる画像はありません。", ["ko"] = "설명할 이미지가 없습니다.", ["zh-CN"] = "这里没有可描述的画面。", ["zh-TW"] = "這裡沒有可描述的畫面。",
@@ -186,6 +234,10 @@ namespace PleaseBeHappyAccess
             ["tab"] = new Dictionary<string, string>
             {
                 ["en"] = "tab", ["ja"] = "タブ", ["ko"] = "탭", ["zh-CN"] = "标签页", ["zh-TW"] = "分頁",
+            },
+            ["quickMenu"] = new Dictionary<string, string>
+            {
+                ["en"] = "Quick menu", ["ja"] = "クイックメニュー", ["ko"] = "퀵 메뉴", ["zh-CN"] = "快捷菜单", ["zh-TW"] = "快捷選單",
             },
             ["chosen"] = new Dictionary<string, string>
             {
