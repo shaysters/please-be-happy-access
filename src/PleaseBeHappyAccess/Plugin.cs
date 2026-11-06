@@ -10,7 +10,7 @@ namespace PleaseBeHappyAccess
     public class Plugin : BaseUnityPlugin
     {
         public const string Guid = "shaysters.pleasebehappy.access";
-        public const string VersionString = "1.0.0";
+        public const string VersionString = "1.0.1";
 
         void Awake()
         {

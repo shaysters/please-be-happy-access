@@ -7,7 +7,7 @@ Speech and braille go through [Prism](https://github.com/ethindp/prism), which t
 - Join the Discord to chat, get help or report problems: <https://discord.gg/KNDXhztGGK>
 - Support shaysters on Ko-fi: <https://ko-fi.com/shaysters>
 
-Status: version 1.0.0. Every part of the game is read and works from the keyboard. See [CHANGELOG.md](CHANGELOG.md) for what has changed.
+Status: version 1.0.1. Every part of the game is read and works from the keyboard. See [CHANGELOG.md](CHANGELOG.md) for what has changed.
 
 ## Requirements
 
@@ -45,7 +45,7 @@ C:\Program Files (x86)\Steam\steamapps\common\Please Be Happy Demo
 
 ### Updating
 
-When the game starts, the mod checks once whether a newer version is out. If there is one, it says so after the title screen appears, for example "Please Be Happy Access 1.0.1 is available. To update, close the game and run Please Be Happy Access Installer." Run the installer again and choose Update; it replaces the old files and removes any that the new version no longer uses. You can turn the check off in the mod's settings. The check only downloads the release information from GitHub; it sends nothing about you or your game.
+When the game starts, the mod checks once whether a newer version is out. If there is one, it says so after the title screen appears, for example "Please Be Happy Access 1.0.2 is available. To update, close the game and run Please Be Happy Access Installer." Run the installer again and choose Update; it replaces the old files and removes any that the new version no longer uses. You can turn the check off in the mod's settings. The check only downloads the release information from GitHub; it sends nothing about you or your game.
 
 The installer can also repair the mod (reinstall the same version) and uninstall it.
 

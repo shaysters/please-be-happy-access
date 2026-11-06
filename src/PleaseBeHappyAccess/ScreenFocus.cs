@@ -77,6 +77,12 @@ namespace PleaseBeHappyAccess
             if (uiManager == null) return;
 
             bool changed = false;
+            // Screens can be destroyed rather than hidden (the map's choice of places, once one is chosen).
+            foreach (IManagedUI gone in shownAtFrame.Keys.Where(k => (MonoBehaviour)k == null).ToList())
+            {
+                shownAtFrame.Remove(gone);
+                changed = true;
+            }
             foreach (IManagedUI ui in uiManager.GetManagedUIs())
             {
                 if (!(ui is MonoBehaviour mb) || ui is UITextPrinterPanel) continue;
@@ -341,8 +347,27 @@ namespace PleaseBeHappyAccess
                         // The quick menu's show/hide tabs; Backspace does the same.
                         && !s.name.StartsWith("QuickMenuButton")));
             }
+            // The location map lists each place twice: its pin on the map, and an entry in the sidebar that
+            // does the same thing (z04MapButtonFinder copies the pin's click). Keep the sidebar's entries:
+            // they have the place names in the game's language and list places you can't go to yet too.
+            var listed = new HashSet<string>(result.Select(SidebarPlace).Where(n => n != null));
+            if (listed.Count > 0) result.RemoveAll(s => IsMapPin(s) && listed.Contains(PinPlace(s)));
             return result;
         }
+
+        static string SidebarPlace(Selectable s) =>
+            s.GetComponent<Naninovel.UI.z04MapButtonFinder>() is Naninovel.UI.z04MapButtonFinder finder
+                ? Traverse.Create(finder).Field("locationName").GetValue<string>()
+                : null;
+
+        static bool IsMapPin(Selectable s) => s.CompareTag("MapButton");
+
+        static string PinPlace(Selectable s) => s.name.Replace("(Clone)", "").Trim();
+
+        /// <summary>True for a map pin whose place the sidebar lists too (see Controls).</summary>
+        internal static bool IsListedMapPin(Selectable s) =>
+            s != null && IsMapPin(s) && current.Any(ui => ui != null && ui.GetComponentsInChildren<Selectable>(false)
+                .Any(other => SidebarPlace(other) == PinPlace(s)));
 
         internal static bool InDropdownList(Transform t)
         {
@@ -446,7 +471,7 @@ namespace PleaseBeHappyAccess
     {
         static void Postfix(Selectable __instance, ref Selectable __result)
         {
-            if (ScreenFocus.InDropdownList(__instance.transform) || ScreenFocus.LeavesScreen(__instance, __result) || __result is Scrollbar || (__result != null && __result.name == "CloseRibbon")) __result = null;
+            if (ScreenFocus.InDropdownList(__instance.transform) || ScreenFocus.LeavesScreen(__instance, __result) || ScreenFocus.IsListedMapPin(__result) || __result is Scrollbar || (__result != null && __result.name == "CloseRibbon")) __result = null;
         }
     }
 
@@ -455,7 +480,7 @@ namespace PleaseBeHappyAccess
     {
         static void Postfix(Selectable __instance, ref Selectable __result)
         {
-            if (ScreenFocus.InDropdownList(__instance.transform) || ScreenFocus.LeavesScreen(__instance, __result) || __result is Scrollbar || (__result != null && __result.name == "CloseRibbon")) __result = null;
+            if (ScreenFocus.InDropdownList(__instance.transform) || ScreenFocus.LeavesScreen(__instance, __result) || ScreenFocus.IsListedMapPin(__result) || __result is Scrollbar || (__result != null && __result.name == "CloseRibbon")) __result = null;
         }
     }
 }

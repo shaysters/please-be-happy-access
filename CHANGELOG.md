@@ -2,6 +2,12 @@
 
 All notable changes to Please Be Happy Access. Newest first.
 
+## 1.0.1 (2026-11-06)
+
+### Fixed
+- On the location map, each place was read twice: once for its pin on the map and once in the list of places beside it, both doing the same thing (reported in chapter 3, for example on the way to Aspen's birthday party at Aspen's Home). Each place is now listed once, using the list's entries, which have the place names in the game's language and include places you can't go to yet.
+- An error after choosing a place on the map, when the game removes the map's choices. It made the mod skip a moment of focus handling.
+
 ## 1.0.0 (2026-11-04)
 
 ### Added
